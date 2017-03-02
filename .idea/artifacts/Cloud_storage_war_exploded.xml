@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Cloud_storage:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Cloud_storage/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Cloud_storage" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="commons-fileupload-1.3.2" />
+          <element id="library" level="project" name="Spring MVC-4.3.4.RELEASE" />
+          <element id="library" level="project" name="aopalliance-1.0" />
+          <element id="library" level="project" name="mybatis-3.2.8" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
