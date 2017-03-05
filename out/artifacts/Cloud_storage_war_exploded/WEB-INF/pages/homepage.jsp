@@ -33,6 +33,8 @@
 </head>
 <body>
 ${user.getUsername()}
+<img src="/get_profile/${user.getUser_id()}" height="50px" width="50px">
+<a href="/profile_upload_page/${user.getUser_id()}">更改头像</a>
 <br>
 <a href="/file_upload_page/${user.getUser_id()}">上传文件</a>
 <br>

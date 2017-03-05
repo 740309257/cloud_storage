@@ -1,10 +1,12 @@
 package com.cloud_storage.controller;
 
 import com.cloud_storage.entity.*;
+import com.cloud_storage.entity.File;
 import com.cloud_storage.service_inter.file_service_inter;
 import com.cloud_storage.service_inter.friend_service_inter;
 import com.cloud_storage.service_inter.message_service_inter;
 import com.cloud_storage.service_inter.user_service_inter;
+import com.cloud_storage.util.util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -14,8 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -183,8 +184,22 @@ public class homepage {
     @RequestMapping(value = "/file_upload_page/{user_id}")
     public String file_upload(@PathVariable("user_id")String user_id,ModelMap m){
         m.addAttribute("user_id",user_id);
-        return "fileupload";
+        return "fileUpload";
     }
+    @RequestMapping(value = "/profile_upload_page/{user_id}")
+    public String profile_upload(@PathVariable("user_id")String user_id,ModelMap m){
+        m.addAttribute("user_id",user_id);
+        return "profileUpload";
+    }
+
+    @RequestMapping(value = "/get_profile/{user_id}")
+    public void get_profile(@PathVariable("user_id")String user_id,HttpServletResponse response) throws IOException {
+        User u = user_service.getUserByID(Integer.parseInt(user_id));
+        String path = u.getPic_path();
+        new util().getProfile(path,response);
+    }
+
+
 
     @RequestMapping(value = "/file_detail/{file_id}")
     public String file_detail(@PathVariable("file_id")String file_id,HttpSession session,ModelMap m){

@@ -59,4 +59,5 @@ public class user_service implements user_service_inter {
         return user_dao.selectFiles(filename);
     }
     public User getUserByID(int id){return user_dao.selectUserByID(id);}
+    public Boolean setPicPath(int user_id,String path){return user_dao.updatePicPath(user_id, path)==1;}
 }

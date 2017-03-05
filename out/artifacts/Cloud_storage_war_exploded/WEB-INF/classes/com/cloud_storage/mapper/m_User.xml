@@ -48,7 +48,11 @@
 
 
     <update id="updateUser" parameterType="com.cloud_storage.entity.User">
-        update user set username=#{username} where id=#{id}
+        update user set username=#{username} where user_id=#{id}
+    </update>
+
+    <update id="updatePicPath" >
+        update user set pic_path=#{Path} where user_id=#{id}
     </update>
 
 

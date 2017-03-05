@@ -16,4 +16,5 @@ public interface user_service_inter {
     public List<User> search_users(String username);
     public List<File> search_files(String filename);
     public User getUserByID(int id);
+    public Boolean setPicPath(int user_id,String path);
 }

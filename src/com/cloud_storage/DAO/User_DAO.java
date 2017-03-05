@@ -2,7 +2,9 @@ package com.cloud_storage.DAO;
 
 import com.cloud_storage.entity.File;
 import com.cloud_storage.entity.User;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
@@ -20,4 +22,5 @@ public interface User_DAO {
     public int select_user_num(String username);
     public String get_password(String username);
     public int get_user_id_by_name(String username);
+    public int updatePicPath(@Param("id") int user_id, @Param("Path") String path);
 }
