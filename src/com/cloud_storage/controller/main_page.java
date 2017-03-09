@@ -4,6 +4,7 @@ import com.cloud_storage.entity.File;
 import com.cloud_storage.entity.User;
 import com.cloud_storage.service_inter.user_service_inter;
 import com.cloud_storage.util.CaptchaUtil;
+import com.cloud_storage.util.util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -30,7 +31,7 @@ public class main_page {
 
     //访问主页
     @RequestMapping(value = "/main_page", method = RequestMethod.GET)
-    public String printWelcome(ModelMap model) {
+    public String MainPage(ModelMap model) {
         return "index";
     }
 
@@ -42,7 +43,7 @@ public class main_page {
         System.out.println(login_username);
         PrintWriter out=response.getWriter();
 
-        if(session.getAttribute("VERIFY_CODE")==null||!session.getAttribute("VERIFY_CODE").equals(verify_code)){
+        if(util.validate_code(session,verify_code)==false){
             out.print("error");
             return;
         }

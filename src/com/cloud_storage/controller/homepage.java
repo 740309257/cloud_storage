@@ -72,7 +72,7 @@ public class homepage {
             System.out.println(id);
             System.out.println(date);
             user_id=(int)session.getAttribute("USERID");
-            if(friend_service.change_apply_states_0(Integer.parseInt(id),user_id,1,date)){
+            if(friend_service.change_apply_states_0(new Friend_apply(Integer.parseInt(id),user_id,1,date))){
                 if(friend_service.add_friend(user_id,Integer.parseInt(id))){
                     out.print("true");
                     out.flush();
@@ -92,7 +92,7 @@ public class homepage {
         int user_id;
         if(session.getAttribute("USERID")!=null){
             user_id=(int)session.getAttribute("USERID");
-            if(friend_service.change_apply_states_0(Integer.parseInt(id),user_id,1,date)){
+            if(friend_service.change_apply_states_0(new Friend_apply(Integer.parseInt(id),user_id,1,date))){
                 out.print("true");
                 out.flush();
                 out.close();

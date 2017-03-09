@@ -12,12 +12,12 @@
     <insert id="insert_Friend_apply"
             useGeneratedKeys="true" keyProperty="id" >
         insert into friend_apply(applier_id,target_id,is_valid,date)
-        values(#{Applier_id},#{Target_id},#{Is_valid},#{Date})
+        values(#{applier_id},#{target_id},#{is_valid},#{date})
     </insert>
 
 
     <update id="update_friend_apply_to_0" >
-        update friend_apply set is_valid= 0 where applier_id=#{Applier_id} and target_id=#{Target_id} and is_valid=#{Is_valid} and date=#{Date}
+        update friend_apply set is_valid= 0 where applier_id=#{applier_id} and target_id=#{target_id} and is_valid=#{is_valid} and date=#{date}
     </update>
 
 
@@ -33,6 +33,9 @@
         select * from friend_apply where target_id = #{target_id} and is_valid = 1
     </select>
 
+    <select id="select_same_apply" parameterType="com.cloud_storage.entity.Friend_apply" resultType="int">
+        select count(*) from friend_apply where applier_id=#{applier_id} and target_id=#{target_id} and is_valid=#{is_valid}
+    </select>
     <select id="select_friend"  resultType="int">
         select count(*) from friends where (user_id1 = #{User_id1} and user_id2 = #{User_id2}) or (user_id1 = #{User_id2} and user_id2 = #{User_id1})
     </select>

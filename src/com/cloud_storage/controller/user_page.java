@@ -1,9 +1,6 @@
 package com.cloud_storage.controller;
 
-import com.cloud_storage.entity.File;
-import com.cloud_storage.entity.File_share;
-import com.cloud_storage.entity.Message;
-import com.cloud_storage.entity.User;
+import com.cloud_storage.entity.*;
 import com.cloud_storage.service_inter.file_service_inter;
 import com.cloud_storage.service_inter.friend_service_inter;
 import com.cloud_storage.service_inter.message_service_inter;
@@ -67,7 +64,7 @@ public class user_page {
             applier_id=(int)session.getAttribute("USERID");
             System.out.println("applier_id: "+applier_id);
             target_id=Integer.parseInt(s_id);
-            result=friend_service.apply_friend(applier_id,target_id,1,new Date().toString());
+            result=friend_service.apply_friend(new Friend_apply(applier_id,target_id,1,new Date().toString()));
             if(result){
                 return "";
             }

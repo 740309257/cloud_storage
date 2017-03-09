@@ -2,6 +2,7 @@ package com.cloud_storage.controller;
 
 import com.cloud_storage.entity.User;
 import com.cloud_storage.service_inter.user_service_inter;
+import com.cloud_storage.util.util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,13 +24,15 @@ public class register {
     //接收提交的注册信息，重定向至个人主页
     @RequestMapping(value = "submit",method = RequestMethod.POST)
     public void submit_inf(User u,String verify_code, HttpSession session,HttpServletResponse response) throws IOException {
-        Boolean save_result=user_service.save_user(u);
+        Boolean save_result;
         PrintWriter out=response.getWriter();
 
-        if(session.getAttribute("VERIFY_CODE")==null||!session.getAttribute("VERIFY_CODE").equals(verify_code)){
+        if(util.validate_code(session,verify_code)==false){
             out.print("error");
             return;
         }
+
+        save_result=user_service.save_user(u);
 
         if(save_result){
             int user_id = user_service.get_user_id_by_name(u.getUsername());

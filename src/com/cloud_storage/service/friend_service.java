@@ -38,12 +38,20 @@ public class friend_service implements friend_service_inter {
         return users;
     }
 
+    public Boolean have_applied(Friend_apply friend_apply){
+        return friend_dao.select_same_apply(friend_apply)==1;
+    }
 
-    public Boolean apply_friend(int applier_id,int target_id,int is_valid,String date){
-        if(is_friend(applier_id,target_id)){
+
+    public Boolean apply_friend(Friend_apply friend_apply){
+        if(is_friend(friend_apply.getApplier_id(),friend_apply.getTarget_id())){
             return false;
         }
-        int result=friend_dao.insert_Friend_apply(applier_id,target_id,is_valid,date);
+        if (have_applied(friend_apply)){
+            return false;
+        }
+
+        int result=friend_dao.insert_Friend_apply(friend_apply);
         if(result==1){
             return true;
         }
@@ -72,8 +80,8 @@ public class friend_service implements friend_service_inter {
         }
         return apply_info;
     }
-    public Boolean change_apply_states_0(int applier_id,int target_id,int is_valid,String date){
-        int result=friend_dao.update_friend_apply_to_0(applier_id,target_id,is_valid,date);
+    public Boolean change_apply_states_0(Friend_apply friend_apply){
+        int result=friend_dao.update_friend_apply_to_0(friend_apply);
         if(result==1){
             return true;
         }

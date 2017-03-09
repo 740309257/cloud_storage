@@ -6,6 +6,7 @@ import com.google.gson.JsonNull;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.OutputStream;
@@ -18,6 +19,21 @@ import java.util.List;
  */
 public class util {
 
+    public static Boolean validate_code(HttpSession session,String test_code){
+        String real_code;
+        if(session.getAttribute("VERIFY_CODE")==null||test_code==null){
+            return false;
+        }
+
+        real_code=(String) session.getAttribute("VERIFY_CODE");
+
+        if(real_code.equals(test_code)||real_code.equals(test_code.toUpperCase())){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
     public  static Boolean getProfile(String path, HttpServletResponse response)  {
         String real_path;
         if(path==null||path.length()==0){

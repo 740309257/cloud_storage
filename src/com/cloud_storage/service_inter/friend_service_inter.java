@@ -10,11 +10,12 @@ import java.util.List;
  */
 public interface friend_service_inter {
     public List<User> getFriendsByUser(User u);
-    public Boolean apply_friend(int applier_id,int target_id,int is_valid,String date);
+    public Boolean apply_friend(Friend_apply friend_apply);
     public Boolean is_friend(int applier_id,int target_id);
+    public Boolean have_applied(Friend_apply friend_apply);
     public List<Friend_apply> get_apply(int target_id);
     public List<HashMap> get_apply_info(int target_id);
-    public Boolean change_apply_states_0(int applier_id,int target_id,int is_valid,String date);
+    public Boolean change_apply_states_0(Friend_apply friend_apply);
     public Boolean add_friend(int user_id1,int user_id2);
 }
 
