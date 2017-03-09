@@ -3,6 +3,7 @@ package com.cloud_storage.controller;
 import com.cloud_storage.entity.File;
 import com.cloud_storage.entity.User;
 import com.cloud_storage.service_inter.user_service_inter;
+import com.cloud_storage.util.CaptchaUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -10,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
@@ -34,10 +37,16 @@ public class main_page {
 
     //验证用户名密码，正确后重定向至个人主页
     @RequestMapping(value = "/verify", method = RequestMethod.POST)
-    public void verify_result(String login_username, String login_password, HttpSession session, HttpServletResponse response) throws IOException {
+    public void verify_result(String login_username, String login_password,String verify_code,HttpSession session, HttpServletResponse response) throws IOException {
 
         System.out.println(login_username);
         PrintWriter out=response.getWriter();
+
+        if(session.getAttribute("VERIFY_CODE")==null||!session.getAttribute("VERIFY_CODE").equals(verify_code)){
+            out.print("error");
+            return;
+        }
+
         if (user_service.verify_password(login_username,login_password)) {
             int user_id = user_service.get_user_id_by_name(login_username);
             System.out.println(user_id + "\n" + login_username);
@@ -83,5 +92,12 @@ public class main_page {
         //搜索信息
         mav.addObject("l_file",l_file);
         return mav;
+    }
+
+    @RequestMapping(value = "/captcha", method = RequestMethod.GET)
+    public void captcha(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException
+    {
+        CaptchaUtil.outputCaptcha(request, response);
     }
 }

@@ -1,18 +1,24 @@
 package com.cloud_storage.util;
 
+import com.cloud_storage.entity.File;
+import com.google.gson.Gson;
+import com.google.gson.JsonNull;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by dell on 3/5/2017.
  */
 public class util {
 
-    public  Boolean getProfile(String path, HttpServletResponse response)  {
+    public  static Boolean getProfile(String path, HttpServletResponse response)  {
         String real_path;
         if(path==null||path.length()==0){
             real_path=Properties.default_pic_path;
@@ -40,4 +46,34 @@ public class util {
             return false;
         }
     }
+
+           /**
+ 08.     * @MethodName : toJson
+ 09.     * @Description : 将对象转为JSON串，此方法能够满足大部分需求
+ 10.     * @param src
+ 11.     *            :将要被转化的对象
+ 12.     * @return :转化后的JSON串
+ 13.     */
+            public static String toJson(Object src) {
+                Gson gson=new Gson();
+               if (src == null) {
+                       return gson.toJson(JsonNull.INSTANCE);
+                    }
+               return gson.toJson(src);
+            }
+
+            public static String files_to_json(List<File> files){
+                List<HashMap> hashMapList=new ArrayList<>();
+                HashMap<String,String> hashMap=new HashMap<>();
+                hashMapList.add(hashMap);
+                for(int i=0;i<files.size();i++){
+                    hashMap=new HashMap<>();
+                    hashMap.put("file_id",files.get(i).getFile_id()+"");
+                    hashMap.put("filename",files.get(i).getFilename());
+                    hashMap.put("authority",files.get(i).getAuthority()+"");
+                    hashMapList.add(hashMap);
+                }
+                return toJson(hashMapList);
+            }
+
 }

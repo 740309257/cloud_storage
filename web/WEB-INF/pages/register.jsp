@@ -34,6 +34,12 @@
             });
         }
 
+		$(function() {
+			$('#captchaImage').click(function () {
+				$('#captchaImage').attr("src", "captcha.form?timestamp=" + (new Date()).valueOf());
+			});
+		});
+
     </script>
 </head>
 <body>
@@ -49,6 +55,9 @@
 		<input id="re_password" name="re_password" placeholder="确认密码" required="" type="password">
 		<hr class="hr15">
 		<input id="introduction" name="introduction" placeholder="自我介绍" required="" type="text">
+		<hr class="hr15">
+		<img id="captchaImage" src="/captcha" style="width: 35%;float: left;margin-right: 7px;height: 30px"/>
+		<input type="text" id="verify_code" name="verify_code" class="text" placeholder="请输入验证码" style="width: 60%;float: left;height: 30px" />
 		<hr class="hr15">
         <input type="button" value="注册" style="width:100%;" onclick="submit_form(this)"/>
         <hr class="hr20">

@@ -22,9 +22,15 @@ public class register {
 
     //接收提交的注册信息，重定向至个人主页
     @RequestMapping(value = "submit",method = RequestMethod.POST)
-    public void submit_inf(User u, HttpSession session,HttpServletResponse response) throws IOException {
+    public void submit_inf(User u,String verify_code, HttpSession session,HttpServletResponse response) throws IOException {
         Boolean save_result=user_service.save_user(u);
         PrintWriter out=response.getWriter();
+
+        if(session.getAttribute("VERIFY_CODE")==null||!session.getAttribute("VERIFY_CODE").equals(verify_code)){
+            out.print("error");
+            return;
+        }
+
         if(save_result){
             int user_id = user_service.get_user_id_by_name(u.getUsername());
             System.out.println(user_id + "\n" + u.getUsername());

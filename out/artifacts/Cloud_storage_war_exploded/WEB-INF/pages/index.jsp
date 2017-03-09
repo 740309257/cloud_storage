@@ -34,6 +34,11 @@
 			});
 		}
 
+		$(function() {
+			$('#captchaImage').click(function () {
+				$('#captchaImage').attr("src", "captcha.form?timestamp=" + (new Date()).valueOf());
+			});
+		});
 	</script>
 </head> 
 <body>
@@ -58,6 +63,11 @@
 		<hr class="hr15">
 		<input name="login_password" placeholder="密码" required="" type="password">
 		<hr class="hr15">
+
+		<img id="captchaImage" src="/captcha" style="width: 35%;float: left;margin-right: 7px;height: 30px"/>
+		<input type="text" id="verify_code" name="verify_code" class="text" placeholder="请输入验证码" style="width: 60%;float: left;height: 30px" />
+		<hr class="hr15">
+
 		<input value="登录" style="width:100%;" type="button" onclick="submit_form(this)">
 		<hr class="hr20">
 		 <a href="/register">新用户注册</a>

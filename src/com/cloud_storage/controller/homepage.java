@@ -196,7 +196,7 @@ public class homepage {
     public void get_profile(@PathVariable("user_id")String user_id,HttpServletResponse response) throws IOException {
         User u = user_service.getUserByID(Integer.parseInt(user_id));
         String path = u.getPic_path();
-        new util().getProfile(path,response);
+        util.getProfile(path,response);
     }
 
 
