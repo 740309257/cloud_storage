@@ -11,8 +11,12 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.client.HttpClientErrorException;
 
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Date;
 import java.util.List;
 
@@ -55,41 +59,52 @@ public class user_page {
     }
 
     //添加好友
-    @RequestMapping(value = "apply_friend/{id}")
-    public String add_friend(@PathVariable("id")String s_id, HttpSession session){
+    @RequestMapping(value = "/apply_friend",method = RequestMethod.POST)
+    public void add_friend(String id, HttpSession session, HttpServletResponse response) throws IOException {
+        PrintWriter writer=response.getWriter();
         int applier_id;
         int target_id;
         Boolean result;
         if(session.getAttribute("USERID")!=null){
             applier_id=(int)session.getAttribute("USERID");
             System.out.println("applier_id: "+applier_id);
-            target_id=Integer.parseInt(s_id);
+            target_id=Integer.parseInt(id);
             result=friend_service.apply_friend(new Friend_apply(applier_id,target_id,1,new Date().toString()));
             if(result){
-                return "";
+                writer.print("true");
             }
             else {
-                return "error_page";
+                writer.print("error");
             }
         }
         else {
-            return "error_page";
+            writer.print("error");
         }
+        writer.flush();
+        writer.close();
     }
 
 
-    @RequestMapping(value = "/fork_file/{file_id}")
-    public String add_file(@PathVariable("file_id")String file_id, HttpSession session){
+    @RequestMapping(value = "/fork_file",method = RequestMethod.POST)
+    public void add_file(String id, HttpSession session,HttpServletResponse response) throws IOException {
+        PrintWriter writer=response.getWriter();
         int user_id;
         if(session.getAttribute("USERID")!=null){
                 user_id=(int)session.getAttribute("USERID");
-                File file=file_service.getFileById(Integer.parseInt(file_id));
+                File file=file_service.getFileById(Integer.parseInt(id));
                 file.setUser_id(user_id);
                 if(file_service.add_file(file)){
-                    return "success";
+                    writer.print("true");
+                }
+                else {
+                    writer.print("error");
                 }
         }
-        return "error_page";
+        else {
+            writer.print("error");
+        }
+        writer.flush();
+        writer.close();
     }
 
 }

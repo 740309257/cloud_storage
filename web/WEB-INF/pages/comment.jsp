@@ -10,6 +10,32 @@
 <html>
 <head>
     <title>Title</title>
+    <script src="<%=request.getContextPath()%>/js/jquery-1.8.2.min.js"></script>
+    <script>
+        function submit_form(obj) {
+            $.ajax({
+                cache: true,
+                type: "POST",
+                url:"/publish_comment/${sessionScope.get("USERID")}",
+                data:$('#comment_form').serialize(),// 你的formid
+                async: false,
+                error: function(res) {
+                    alert("Connection error");
+                },
+                success: function(data) {
+                    if(data=="true")
+                    {
+                        alert("评论成功");
+                        window.location.href="http://localhost:8080/comment/${message_id}";
+                    }
+                    else
+                    {
+                        alert("评论失败！");
+                    }
+                }
+            });
+        }
+        </script>
 </head>
 <body>
 <c:forEach items="${l_comment}" var="comment" varStatus="s" begin="0" end="${l_comment.size()}">
@@ -31,10 +57,10 @@
 <br>
 <br>
 
-<form action="/publish_comment/${sessionScope.get("USERID")}" method="post">
+<form id="comment_form" action="/publish_comment/${sessionScope.get("USERID")}" method="post">
     <input name="message_id" id="message_id" value="${message_id}" type="text" hidden>
     <input name="text" id="text" type="text">
-    <input type="submit" value="PUBLISH">
+    <input type="button" value="PUBLISH" onclick="submit_form(this)">
 </form>
 
 </body>

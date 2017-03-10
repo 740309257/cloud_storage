@@ -11,6 +11,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Date;
 import java.util.List;
 
@@ -48,7 +51,8 @@ public class message_page {
     }
 
     @RequestMapping(value = "/publish_comment/{user_id}",method = RequestMethod.POST)
-    public String publish_comment(@PathVariable("user_id")String user_id,String message_id,String text){
+    public void publish_comment(@PathVariable("user_id")String user_id, String message_id, String text, HttpServletResponse response) throws IOException {
+        PrintWriter writer=response.getWriter();
         Comment comment=new Comment();
         comment.setText(text);
         comment.setMessage_id(Integer.parseInt(message_id));
@@ -56,11 +60,17 @@ public class message_page {
         comment.setUsername(user_service.getUserByID(Integer.parseInt(user_id)).getUsername());
         if(message_service.save_comment(comment)){
            if(message_service.Comment_num_plus(Integer.parseInt(message_id))) {
-               return "";
+               writer.print("true");
            }
-            return "errorpage";
+            else {
+               writer.print("error");
+           }
         }
-            return "errorpage";
+         else {
+            writer.print("error");
+        }
+        writer.flush();
+        writer.close();
     }
 
 }

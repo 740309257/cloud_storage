@@ -10,6 +10,25 @@
 <html>
 <head>
     <title>Title</title>
+    <script src="<%=request.getContextPath()%>/js/jquery-1.8.2.min.js"></script>
+    <script>
+        function is_ok(obj,url,id) {
+            $.ajax({
+                cache: true,
+                type: "POST",
+                url:url,
+                data: {"id":id},
+
+                success: function(res) {
+                    if (res== "true"){
+                        alert("成功");
+                    }else{
+                        alert("操作失败");
+                    }
+                }
+            });
+        }
+        </script>
 </head>
 <body>
 ${user.getUsername()}
@@ -38,7 +57,7 @@ ${user.getUsername()}
 
         <td>
             <p>${file.getFilename()}</p>
-            <a href="/fork_file/${file.getFile_id()}">Fork</a>
+            <input type="button" value="FORK" onclick="is_ok(this,'/fork_file','${file.getFile_id()}')"/>
         </td>
 
     </tr>
@@ -59,7 +78,7 @@ ${user.getUsername()}
 <br>
 <br>
 
-<a href="/apply_friend/${user.getUser_id()}">添加好友</a>
+<input type="button" value="请求添加好友" onclick="is_ok(this,'/apply_friend','${user.getUser_id()}')"/>
 
 </body>
 </html>
