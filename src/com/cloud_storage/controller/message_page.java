@@ -4,6 +4,7 @@ import com.cloud_storage.entity.Comment;
 import com.cloud_storage.entity.Message;
 import com.cloud_storage.service_inter.message_service_inter;
 import com.cloud_storage.service_inter.user_service_inter;
+import com.cloud_storage.util.util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.Date;
@@ -28,7 +30,10 @@ public class message_page {
     private user_service_inter user_service;
 
     @RequestMapping(value = "/publish_message/{user_id}",method = RequestMethod.POST)
-    public String publish_message(@PathVariable("user_id")String publisher_id,String text){
+    public String publish_message(@PathVariable("user_id")String publisher_id, String text, HttpSession session){
+        if(!util.is_login(session,Integer.parseInt(publisher_id))){
+            return "redirect:/main_page";
+        }
         Message message=new Message();
         message.setPublisher_id(Integer.parseInt(publisher_id));
         message.setText(text);
@@ -51,23 +56,26 @@ public class message_page {
     }
 
     @RequestMapping(value = "/publish_comment/{user_id}",method = RequestMethod.POST)
-    public void publish_comment(@PathVariable("user_id")String user_id, String message_id, String text, HttpServletResponse response) throws IOException {
+    public void publish_comment(@PathVariable("user_id")String user_id, String message_id, String text,HttpSession session, HttpServletResponse response) throws IOException {
         PrintWriter writer=response.getWriter();
-        Comment comment=new Comment();
-        comment.setText(text);
-        comment.setMessage_id(Integer.parseInt(message_id));
-        comment.setUser_id(Integer.parseInt(user_id));
-        comment.setUsername(user_service.getUserByID(Integer.parseInt(user_id)).getUsername());
-        if(message_service.save_comment(comment)){
-           if(message_service.Comment_num_plus(Integer.parseInt(message_id))) {
-               writer.print("true");
-           }
-            else {
-               writer.print("error");
-           }
-        }
-         else {
+        if(!util.is_login(session,Integer.parseInt(user_id))){
             writer.print("error");
+        }
+        else {
+            Comment comment = new Comment();
+            comment.setText(text);
+            comment.setMessage_id(Integer.parseInt(message_id));
+            comment.setUser_id(Integer.parseInt(user_id));
+            comment.setUsername(user_service.getUserByID(Integer.parseInt(user_id)).getUsername());
+            if (message_service.save_comment(comment)) {
+                if (message_service.Comment_num_plus(Integer.parseInt(message_id))) {
+                    writer.print("true");
+                } else {
+                    writer.print("error");
+                }
+            } else {
+                writer.print("error");
+            }
         }
         writer.flush();
         writer.close();

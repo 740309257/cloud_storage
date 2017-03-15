@@ -92,4 +92,13 @@ public class util {
                 return toJson(hashMapList);
             }
 
+
+            public static Boolean is_login(HttpSession session,int user_id){
+                if(session.getAttribute("USERID")==null){
+                    return false;
+                }
+
+                int session_id=(int)session.getAttribute("USERID");
+                return session_id==user_id;
+            }
 }
