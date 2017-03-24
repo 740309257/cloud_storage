@@ -22,8 +22,6 @@ public interface file_service_inter {
     public Boolean add_file_nums(int file_id);
     public Boolean change_file_auth(int file_id,int user_id,int auth);
     public List<HashMap> get_share_info(int target_id);
-    public String generate_file_path(String user_id,String file_name);
-    public String generate_profile_path(String user_id,String file_name);
     public Boolean rename_file(int file_id,int user_id,String new_name);
     public Boolean save_file(int file_id,int user_id);
     public Boolean delete_entry(int file_id,int user_id);

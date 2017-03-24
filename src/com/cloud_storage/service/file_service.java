@@ -140,15 +140,5 @@ public class file_service implements file_service_inter {
 
 
 
-    public String generate_file_path(String user_id,String file_name){
-        String base_path=Properties.file_path;
-        String path=base_path+user_id+"_"+file_name;
-        return path;
-    }
 
-    public String generate_profile_path(String user_id,String file_name){
-        String base_path=Properties.user_pic_path;
-        String path=base_path+user_id+"_"+file_name;
-        return path;
-    }
 }

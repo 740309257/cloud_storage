@@ -6,6 +6,7 @@ import com.cloud_storage.entity.User_File;
 import com.cloud_storage.service_inter.file_service_inter;
 import com.cloud_storage.service_inter.user_service_inter;
 import com.cloud_storage.util.Properties;
+import com.cloud_storage.util.util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -42,12 +43,14 @@ public class upload_page {
         System.out.println(up_files.size()+" files got...");
         String filename="";
         String save_path="";
+        int file_id;
         com.cloud_storage.entity.File f=new com.cloud_storage.entity.File();
         User_File user_file=new User_File();
         try {
             for(int i=0;i<up_files.size();i++)
             {
-                save_path=file_service.generate_file_path(user_id,up_files.get(i).getOriginalFilename());
+                file_id=util.generate_file_id();
+                save_path= util.generate_file_path(file_id,up_files.get(i).getOriginalFilename());
                 File file=new File(save_path);
                 up_files.get(i).transferTo(file);
                 filename=up_files.get(i).getOriginalFilename();
@@ -57,11 +60,9 @@ public class upload_page {
                 f.setFilename(filename);
                 f.setNums(1);
                 f.setProvider_id(Integer.parseInt(user_id));
-
-                //to be continuing...
-                f.setFile_id(new Date().getSeconds());
-                f.setSize(up_files.get(i).getSize()+"");
-                f.setType("类型不太清楚");
+                f.setFile_id(file_id);
+                f.setSize(util.cal_file_size(up_files.get(i).getSize()));
+                f.setType(util.get_file_type(filename));
 
 
                 if(file_service.add_file(f)){
@@ -89,7 +90,7 @@ public class upload_page {
     String profileUpload(@PathVariable("user_id")String user_id,@RequestParam("profile") CommonsMultipartFile profile) throws IOException {
         Boolean result=false;
         System.out.println("fileName："+profile.getOriginalFilename());
-        String path=file_service.generate_profile_path(user_id,profile.getOriginalFilename());
+        String path=util.generate_profile_path(user_id,profile.getOriginalFilename());
         File newFile=new File(path);
         //通过CommonsMultipartFile的方法直接写文件（注意这个时候）
         profile.transferTo(newFile);

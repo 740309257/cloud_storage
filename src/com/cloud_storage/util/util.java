@@ -9,8 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.OutputStream;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -102,4 +102,77 @@ public class util {
                 int session_id=(int)session.getAttribute("USERID");
                 return session_id==user_id;
             }
+
+
+    public synchronized static int generate_file_id(){
+        Properties.file_id++;
+        System.out.println("File_id: "+Properties.file_id);
+        return Properties.file_id;
+    }
+
+    public static String generate_file_path(int file_id,String file_name){
+        String base_path=Properties.file_path;
+        String path=base_path+file_id+"_"+System.currentTimeMillis()+"_"+file_name;
+        return path;
+    }
+
+    public static String generate_profile_path(String user_id,String file_name){
+        String base_path=Properties.user_pic_path;
+        String path=base_path+user_id+"_"+file_name;
+        return path;
+    }
+
+    public static String cal_file_size(long size){
+        DecimalFormat df = new DecimalFormat("#0.00");
+        long byte_size=size;
+        if(byte_size/1024.0>=1024){
+            return df.format(byte_size/1024.0/1024.0)+"MB";
+        }
+        else {
+            return df.format(byte_size/1024.0)+"KB";
+        }
+    }
+
+    public static String get_file_type(String filename){
+        String[] sp=filename.split("\\.");
+        String type;
+        if(sp.length<2){
+            type= "未知格式";
+        }
+        else {
+            String suffix = sp[sp.length-1];
+            switch (suffix){
+                case "doc":
+                case "docx":
+                case "txt":
+                    type="文本格式";
+                    break;
+                case "pdf":
+                    type="PDF格式";
+                    break;
+                case "flv":
+                case "rmvb":
+                case "rm":
+                case "avi":
+                case "mov":
+                case "wmv":
+                    type="视频格式";
+                    break;
+                case "mp3":
+                case "wma":
+                case "flac":
+                case "ape":
+                    type="音频格式";
+                    break;
+                case "zip":
+                case "rar":
+                    type="压缩包格式";
+                    break;
+                default:
+                    type=suffix+"格式";
+            }
+        }
+
+        return type;
+    }
 }

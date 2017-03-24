@@ -14,6 +14,8 @@ public class Properties{
 
     public static String default_pic_path;
 
+    public static int file_id;
+
     public String getFile_path() {
         return file_path;
     }
@@ -39,6 +41,16 @@ public class Properties{
     @Value("#{configProperties['default_pic_path']}")
     public void setDefault_pic_path(String default_pic_path) {
         Properties.default_pic_path = default_pic_path;
+    }
+
+    public int getFile_id() {
+        return file_id;
+    }
+
+    @Value("#{configProperties['file_id']}")
+    public void setFile_id(int file_id) {
+        Properties.file_id = file_id;
+        //System.out.println("File_id="+file_id);
     }
 }
 
