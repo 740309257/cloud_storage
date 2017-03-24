@@ -90,19 +90,15 @@ public class user_page {
         PrintWriter writer=response.getWriter();
         int user_id;
         if(session.getAttribute("USERID")!=null){
-                user_id=(int)session.getAttribute("USERID");
-                File file=file_service.getFileById(Integer.parseInt(id));
-                file.setUser_id(user_id);
-                if(file_service.add_file(file)){
+            user_id=(int)session.getAttribute("USERID");
+            if(file_service.save_file(Integer.parseInt(id),user_id)){
                     writer.print("true");
-                }
-                else {
-                    writer.print("error");
-                }
+                    writer.flush();
+                    writer.close();
+                    return;
+               }
         }
-        else {
-            writer.print("error");
-        }
+        writer.print("error");
         writer.flush();
         writer.close();
     }

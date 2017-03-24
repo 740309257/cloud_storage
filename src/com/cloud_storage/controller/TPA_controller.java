@@ -37,7 +37,7 @@ public class TPA_controller {
 
     @RequestMapping(value = "/tpa_login",method = RequestMethod.POST)
     public void Tpa_login(String login_username,String login_password,String token,HttpServletResponse response) throws IOException {
-        List<com.cloud_storage.entity.File> files=new ArrayList<>();
+        List<com.cloud_storage.entity.User_File> files=new ArrayList<>();
         int user_id;
         User u=new User();
 
@@ -62,7 +62,7 @@ public class TPA_controller {
     }
 
 
-
+/*
     @RequestMapping(value = "/tpa_upload",method = RequestMethod.POST)
     public void Tpa_upload(String user_id, String token, String filename, @RequestParam("up_file") CommonsMultipartFile up_file, HttpServletResponse response) throws IOException {
         System.out.println("id:"+user_id+"\n"+"token:"+token+"\n"+"filename:"+filename+"\n"+"ori_name:"+up_file.getOriginalFilename());
@@ -88,4 +88,5 @@ public class TPA_controller {
         writer.flush();
         writer.close();
     }
+    */
 }

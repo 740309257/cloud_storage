@@ -2,6 +2,7 @@ package com.cloud_storage.controller;
 
 
 import com.cloud_storage.entity.File_share;
+import com.cloud_storage.entity.User_File;
 import com.cloud_storage.service_inter.file_service_inter;
 import com.cloud_storage.service_inter.user_service_inter;
 import com.cloud_storage.util.Properties;
@@ -41,31 +42,47 @@ public class upload_page {
         System.out.println(up_files.size()+" files got...");
         String filename="";
         String save_path="";
-        Boolean result;
+        com.cloud_storage.entity.File f=new com.cloud_storage.entity.File();
+        User_File user_file=new User_File();
         try {
             for(int i=0;i<up_files.size();i++)
             {
                 save_path=file_service.generate_file_path(user_id,up_files.get(i).getOriginalFilename());
                 File file=new File(save_path);
                 up_files.get(i).transferTo(file);
-                filename=request.getParameter("filename"+i);
+                filename=up_files.get(i).getOriginalFilename();
                 System.out.println("filename: "+filename);
-                com.cloud_storage.entity.File f=new com.cloud_storage.entity.File();
-                f.setUser_id(Integer.parseInt(user_id));
+
                 f.setFile_path(save_path);
                 f.setFilename(filename);
-                f.setAuthority(0);
-                result=file_service.add_file(f);
-                if(result==false){
-                    return "error_page";
+                f.setNums(1);
+                f.setProvider_id(Integer.parseInt(user_id));
+
+                //to be continuing...
+                f.setFile_id(new Date().getSeconds());
+                f.setSize(up_files.get(i).getSize()+"");
+                f.setType("类型不太清楚");
+
+
+                if(file_service.add_file(f)){
+                    user_file.setFile_id(f.getFile_id());
+                    user_file.setSize(f.getSize());
+                    user_file.setDate(new Date().toString());
+                    user_file.setAuthority(1);
+                    user_file.setUser_id(Integer.parseInt(user_id));
+                    user_file.setFilename(request.getParameter("filename"+i));
+
+                    if(file_service.add_user_file(user_file)){
+                        System.out.println("Files uploaded successfully!");
+                    }
                 }
             }
         }catch (Exception e){
             e.printStackTrace();
             return "error_page";
         }
-        System.out.println("Files uploaded successfully!");
         return "redirect:/homepage/"+user_id;
+
     }
 
     @RequestMapping("/profileUpload/{user_id}")

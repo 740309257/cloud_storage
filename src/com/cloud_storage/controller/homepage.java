@@ -18,6 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 
@@ -45,7 +46,7 @@ public class homepage {
         }
         User u;
         List<User> friends;
-        List<File> files;
+        List<User_File> files;
         List<HashMap> l_file_share;
         List<HashMap> l_friend_applier;
 
@@ -123,14 +124,12 @@ public class homepage {
             file_share.setDate(date);
 
             if(file_service.change_share_states_0(file_share)){
-                File file=file_service.getFileById(Integer.parseInt(id));
-                file.setUser_id(user_id);
-                if(file_service.add_file(file)){
-                    out.print("true");
-                    out.flush();
-                    out.close();
-                    return;
-                }
+                if(file_service.save_file(file_share.getFile_id(),user_id)){
+                        out.print("true");
+                        out.flush();
+                        out.close();
+                        return;
+                    }
             }
         }
 
@@ -206,15 +205,15 @@ public class homepage {
 
     @RequestMapping(value = "/file_detail/{file_id}")
     public String file_detail(@PathVariable("file_id")String file_id,HttpSession session,ModelMap m){
-        File f;
+        HashMap f;
         List<User> friends=new ArrayList<>();
         int user_id;
         if(session.getAttribute("USERID")!=null){
             user_id=(int)session.getAttribute("USERID");
-            f=file_service.getFileById(Integer.parseInt(file_id));
+            f=file_service.getFileDetailById(Integer.parseInt(file_id),user_id);
             friends=friend_service.getFriendsByUser(user_service.getUserByID(user_id));
             m.addAttribute("user_id",user_id);
-            m.addAttribute("file",f);
+            m.addAttribute("m_file",f);
             m.addAttribute("l_friend",friends);
             return "file_detail";
         }

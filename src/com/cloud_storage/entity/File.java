@@ -6,20 +6,23 @@ package com.cloud_storage.entity;
 public class File {
     private int file_id;
     private String filename;
-    private int user_id;
     private String file_path;
-    private int authority;//0:private;1:public
+    private int nums;
+    private String size;
+    private String type;
+    private int provider_id;
 
-    public File() {
-        //public
-        authority=1;
+    public File(int file_id, String filename, String file_path, int nums, String size, String type, int provider_id) {
+        this.file_id = file_id;
+        this.filename = filename;
+        this.file_path = file_path;
+        this.nums = nums;
+        this.size = size;
+        this.type = type;
+        this.provider_id = provider_id;
     }
 
-    public File(String filename, int user_id, String file_path, int authority) {
-        this.filename = filename;
-        this.user_id = user_id;
-        this.file_path = file_path;
-        this.authority = authority;
+    public File() {
     }
 
     public int getFile_id() {
@@ -38,14 +41,6 @@ public class File {
         this.filename = filename;
     }
 
-    public int getUser_id() {
-        return user_id;
-    }
-
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
-    }
-
     public String getFile_path() {
         return file_path;
     }
@@ -54,11 +49,35 @@ public class File {
         this.file_path = file_path;
     }
 
-    public int getAuthority() {
-        return authority;
+    public int getNums() {
+        return nums;
     }
 
-    public void setAuthority(int authority) {
-        this.authority = authority;
+    public void setNums(int nums) {
+        this.nums = nums;
+    }
+
+    public String getSize() {
+        return size;
+    }
+
+    public void setSize(String size) {
+        this.size = size;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
+    }
+
+    public int getProvider_id() {
+        return provider_id;
+    }
+
+    public void setProvider_id(int provider_id) {
+        this.provider_id = provider_id;
     }
 }

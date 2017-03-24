@@ -60,6 +60,10 @@ ${user.getUsername()}
             <input type="button" value="FORK" onclick="is_ok(this,'/fork_file','${file.getFile_id()}')"/>
         </td>
 
+        <td>
+            <p>${file.getDate()}</p>
+        </td>
+
     </tr>
 </c:forEach>
 <br>

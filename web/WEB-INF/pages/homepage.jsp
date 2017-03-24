@@ -85,6 +85,12 @@ ${user.getUsername()}
         <td>
             <a href="/file_detail/${file.getFile_id()}">${file.getFilename()}</a>
         </td>
+        <td>
+            <p>${file.getDate()}</p>
+        </td>
+        <td>
+            <p>${file.getSize()}</p>
+        </td>
 
     </tr>
 </c:forEach>

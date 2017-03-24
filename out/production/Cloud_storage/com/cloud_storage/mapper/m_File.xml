@@ -10,18 +10,24 @@
         select * from file where file_id = #{file_id}
     </select>
 
-    <!-- 为了返回list 类型而定义的returnMap -->
-    <resultMap type="com.cloud_storage.entity.File" id="resultListFile">
-        <id column="file_id" property="file_id" />
-        <result column="filename" property="filename" />
-        <result column="user_id" property="user_id" />
-    </resultMap>
-    <!-- 返回list 的select 语句，注意 resultMap 的值是指向前面定义好的 -->
-    <select id="selectAllFilesByUser" parameterType="com.cloud_storage.entity.User" resultMap="resultListFile">
-        select * from file where user_id = #{user_id}
+    <select id="selectUser_FileById" resultType="com.cloud_storage.entity.User_File">
+        select * from user_file where file_id = #{File_id} and user_id = #{User_id}
     </select>
-    <select id="selectPublicFilesByUser" parameterType="com.cloud_storage.entity.User" resultMap="resultListFile">
-        select * from file where user_id = #{user_id} and authority = 1
+
+    <select id="selectFileDetailById"  resultType="java.util.HashMap">
+        SELECT user_file.file_id,user_file.filename,authority,date,user_file.size,u.user_id,u.username from (user_file left join file on user_file.file_id=file.file_id)
+        LEFT join user as u on provider_id = u.user_id
+        where user_file.file_id=#{File_id} and user_file.user_id=#{User_id}
+    </select>
+
+
+
+    <select id="selectAllFilesByUser" parameterType="com.cloud_storage.entity.User" resultType="com.cloud_storage.entity.User_File">
+        select * from user_file where user_id = #{user_id}
+    </select>
+
+    <select id="selectPublicFilesByUser" parameterType="com.cloud_storage.entity.User" resultType="com.cloud_storage.entity.User_File">
+        select * from user_file where user_id = #{user_id} and authority = 1
     </select>
 
 
@@ -41,24 +47,48 @@
         select * from file_share where target_id = #{target_id} and is_valid = 1
     </select>
 
+    <select id="select_file_nums" parameterType="int" resultType="int">
+        select nums from file where file_id = #{file_id}
+    </select>
+
+
+
+    <update id="add_file_nums" parameterType="int">
+        update file set nums = nums + 1 where file_id=#{file_id}
+    </update>
+
+    <update id="minus_file_nums" parameterType="int">
+        update file set nums = nums - 1 where file_id=#{file_id}
+    </update>
 
     <update id="update_share_states_to_0" >
         update file_share set is_valid= 0 where target_id=#{target_id} and file_id=#{file_id} and is_valid=#{is_valid} and date=#{date}
     </update>
 
-    <insert id="insert_file"
+    <insert id="insert_file" parameterType="com.cloud_storage.entity.File"
             useGeneratedKeys="true" keyProperty="id" >
-        insert into file(filename,user_id,file_path,authority)
-        values(#{filename},#{user_id},#{file_path},#{authority})
+        insert into file(file_id,filename,file_path,nums,size,type,provider_id)
+        values(#{file_id},#{filename},#{file_path},#{nums},#{size},#{type},#{provider_id})
+    </insert>
+
+    <insert id="insert_user_file" parameterType="com.cloud_storage.entity.User_File"
+            useGeneratedKeys="true" keyProperty="id" >
+        insert into user_file(user_id,file_id,filename,authority,date,size)
+        values(#{user_id},#{file_id},#{filename},#{authority},#{date},#{size})
     </insert>
 
     <update id="update_file_auth" >
-        update file set authority= #{Auth} where file_id=#{File_id}
+        update user_file set authority= #{Auth} where file_id=#{File_id} and user_id = #{User_id}
     </update>
 
     <update id="update_file_name" >
-        update file set filename= #{New_name} where file_id=#{File_id}
+        update user_file set filename= #{New_name} where file_id = #{File_id} and user_id = #{User_id}
     </update>
+
+
+    <delete id="delete_user_file">
+        delete from user_file where file_id=#{File_id} and user_id = #{User_id}
+    </delete>
 
     <delete id="delete_file" parameterType="int">
         delete from file where file_id=#{file_id}

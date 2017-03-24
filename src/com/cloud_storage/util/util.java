@@ -1,6 +1,7 @@
 package com.cloud_storage.util;
 
 import com.cloud_storage.entity.File;
+import com.cloud_storage.entity.User_File;
 import com.google.gson.Gson;
 import com.google.gson.JsonNull;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -78,7 +79,7 @@ public class util {
                return gson.toJson(src);
             }
 
-            public static String files_to_json(List<File> files){
+            public static String files_to_json(List<User_File> files){
                 List<HashMap> hashMapList=new ArrayList<>();
                 HashMap<String,String> hashMap=new HashMap<>();
                 hashMapList.add(hashMap);

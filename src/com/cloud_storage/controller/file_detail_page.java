@@ -40,17 +40,27 @@ public class file_detail_page {
     }
 
     @RequestMapping(value = "/file_rename/{file_id}",method = RequestMethod.POST)
-    public String rename(@PathVariable("file_id")String file_id,String new_name){
-        if(file_service.rename_file(Integer.parseInt(file_id),new_name)){
-            return "redirect:/file_detail/"+file_id;
+    public String rename(@PathVariable("file_id")String file_id,String new_name,HttpSession session){
+        int user_id;
+        if(session.getAttribute("USERID")!=null){
+            user_id=(int)session.getAttribute("USERID");
+            if(file_service.rename_file(Integer.parseInt(file_id),user_id,new_name)){
+                return "redirect:/file_detail/"+file_id;
+            }
         }
+
         return "error_page";
     }
     @RequestMapping(value = "/delete_file/{file_id}")
     public String delete(@PathVariable("file_id")String file_id, HttpSession session){
-        if(file_service.delete_file(Integer.parseInt(file_id))){
-            return "redirect:/homepage/"+session.getAttribute("USERID");
+        int user_id;
+        if(session.getAttribute("USERID")!=null){
+            user_id=(int)session.getAttribute("USERID");
+            if(file_service.delete_entry(Integer.parseInt(file_id),user_id)){
+                return "redirect:/homepage/"+session.getAttribute("USERID");
+            }
         }
+
         return "error_page";
     }
     @RequestMapping(value = "/share_file",method = RequestMethod.GET)
@@ -64,9 +74,13 @@ public class file_detail_page {
     }
 
     @RequestMapping(value = "/set_file_auth",method = RequestMethod.GET)
-    public String set_auth(String file_id,String auth){
-        if(file_service.change_file_auth(Integer.parseInt(file_id),Integer.parseInt(auth))){
-            return "redirect:/file_detail/"+file_id;
+    public String set_auth(String file_id,String auth,HttpSession session){
+        int user_id;
+        if(session.getAttribute("USERID")!=null){
+            user_id=(int)session.getAttribute("USERID");
+            if(file_service.change_file_auth(Integer.parseInt(file_id),user_id,Integer.parseInt(auth))){
+                return "redirect:/file_detail/"+file_id;
+            }
         }
         return "error_page";
     }

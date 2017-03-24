@@ -14,6 +14,7 @@
           <element id="library" level="project" name="mybatis-3.2.8" />
           <element id="library" level="project" name="gson-2.1" />
           <element id="library" level="project" name="jstl" />
+          <element id="library" level="project" name="aopalliance-1.01" />
         </element>
       </element>
     </root>
