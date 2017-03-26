@@ -1,11 +1,13 @@
 <component name="libraryTable">
   <library name="commons-fileupload-1.3.2">
     <CLASSES>
-      <root url="jar://D:/杂七杂八/commons-fileupload-1.3.2-bin/lib/commons-fileupload-1.3.2.jar!/" />
-      <root url="jar://D:/杂七杂八/commons-io-2.5/commons-io-2.5.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/jar/commons-fileupload-1.3.2.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/jar/commons-io-2.5.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/jar/mybatis-3.2.8.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/jar/servlet-api.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://D:/杂七杂八/commons-io-2.5/commons-io-2.5-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/jar/commons-io-2.5-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES />
   </library>

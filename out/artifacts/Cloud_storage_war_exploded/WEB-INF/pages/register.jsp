@@ -10,7 +10,39 @@
 	<script src="<%=request.getContextPath()%>/js/check.js"></script>
     <script src="<%=request.getContextPath()%>/js/jquery-1.8.2.min.js"></script>
     <script src="<%=request.getContextPath()%>/js/jquery-ui.min.js.js"></script>
+	<script src="<%=request.getContextPath()%>/js/jquery.md5.js"></script>
+	<script>
+        function doKeyDown(){
+            if(event.keyCode == 13)
+            {
+                submit_form(this);
+            }
+        }
+	</script>
+	<script>
+        function md5Encryption(obj) {
+            var password=document.getElementById("password").value;
+            if(password != null)
+            {
+                var pwd=$.md5(password).substring(0,20);
+                $("#password").val(pwd);
+            }
 
+        }
+	</script>
+	<script>
+        function re_md5Encryption(obj) {
+            var re_password=document.getElementById("re_password").value;
+            if(re_password!=null)
+            {
+                var re_pwd=$.md5(re_password).substring(0,20);
+                $("#re_password").val(re_pwd);
+            }
+
+
+
+        }
+	</script>
     <script>
         function submit_form(obj) {
             $.ajax({
@@ -42,7 +74,7 @@
 
     </script>
 </head>
-<body>
+<body onkeypress="doKeyDown()">
 <div class="register">
     <div class="message">云存储系统-用户注册</div>
     <div id="darkbannerwrap"></div>
@@ -50,9 +82,9 @@
     <form method="post" action="submit" id="register_form">
 		<input id="username" name="username" placeholder="用户名" required="" type="text" onblur="isExists(this)">
 		<hr class="hr15">
-		<input id="password" name="password" placeholder="密码" required="" type="password">
+		<input id="password" name="password" placeholder="密码" required="" type="password" onblur="md5Encryption(this)">
 		<hr class="hr15">
-		<input id="re_password" name="re_password" placeholder="确认密码" required="" type="password">
+		<input id="re_password" name="re_password" placeholder="确认密码" required="" type="password" onblur="re_md5Encryption(this)">
 		<hr class="hr15">
 		<input id="introduction" name="introduction" placeholder="自我介绍" required="" type="text">
 		<hr class="hr15">

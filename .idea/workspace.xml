@@ -2,14 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1827c501-3d09-4c24-a8e6-263c2d80d37b" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/aopalliance_1_01.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/gson_2_1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/jstl.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/mybatis_3_2_8.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/servlet_api.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Dump20170324.sql" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/images/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/images/Thumbs.db" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/DAO/File_DAO.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/DAO/File_DAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/DAO/Friend_DAO.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/DAO/Friend_DAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/DAO/Message_DAO.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/DAO/Message_DAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/DAO/TPA_DAO.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/DAO/TPA_DAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/DAO/User_DAO.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/DAO/User_DAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/controller/TPA_controller.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/controller/TPA_controller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/controller/file_detail_page.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/controller/file_detail_page.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/controller/homepage.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/controller/homepage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/controller/main_page.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/controller/main_page.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/controller/message_page.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/controller/message_page.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/controller/register.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/controller/register.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/controller/upload_page.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/controller/upload_page.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/controller/user_page.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/controller/user_page.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/entity/Comment.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/entity/Comment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/entity/File.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/entity/File.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/entity/File_share.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/entity/File_share.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/entity/Friend_apply.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/entity/Friend_apply.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/entity/Message.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/entity/Message.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/entity/Tpa.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/entity/Tpa.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/entity/User.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/entity/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/entity/User_File.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/entity/User_File.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service/TPA_service.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service/TPA_service.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service/file_service.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service/file_service.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service/friend_service.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service/friend_service.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service/message_service.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service/message_service.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service/user_service.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service/user_service.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service_inter/TPA_service_inter.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service_inter/TPA_service_inter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service_inter/file_service_inter.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service_inter/file_service_inter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service_inter/friend_service_inter.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service_inter/friend_service_inter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service_inter/message_service_inter.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service_inter/message_service_inter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service_inter/user_service_inter.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/service_inter/user_service_inter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/util/CaptchaUtil.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/util/CaptchaUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/util/Properties.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/util/Properties.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/util/util.class" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/classes/com/cloud_storage/util/util.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/DAO/File_DAO.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/DAO/File_DAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/DAO/Friend_DAO.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/DAO/Friend_DAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/DAO/Message_DAO.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/DAO/Message_DAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/DAO/TPA_DAO.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/DAO/TPA_DAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/DAO/User_DAO.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/DAO/User_DAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/controller/TPA_controller.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/controller/TPA_controller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/controller/file_detail_page.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/controller/file_detail_page.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/controller/homepage.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/controller/homepage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/controller/main_page.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/controller/main_page.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/controller/message_page.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/controller/message_page.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/controller/register.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/controller/register.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/controller/upload_page.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/controller/upload_page.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/controller/user_page.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/controller/user_page.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/entity/Comment.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/entity/Comment.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/entity/File.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/entity/File.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/entity/File_share.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/entity/File_share.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/entity/Friend_apply.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/entity/Friend_apply.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/entity/Message.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/entity/Message.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/entity/Tpa.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/entity/Tpa.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/entity/User.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/entity/User.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/entity/User_File.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/entity/User_File.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service/TPA_service.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service/TPA_service.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service/file_service.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service/file_service.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service/friend_service.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service/friend_service.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service/message_service.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service/message_service.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service/user_service.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service/user_service.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service_inter/TPA_service_inter.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service_inter/TPA_service_inter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service_inter/file_service_inter.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service_inter/file_service_inter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service_inter/friend_service_inter.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service_inter/friend_service_inter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service_inter/message_service_inter.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service_inter/message_service_inter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service_inter/user_service_inter.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/service_inter/user_service_inter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/util/CaptchaUtil.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/util/CaptchaUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/util/Properties.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/util/Properties.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/util/util.class" afterPath="$PROJECT_DIR$/out/production/Cloud_storage/com/cloud_storage/util/util.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Cloud_storage_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Cloud_storage_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_1_3_2.xml" afterPath="$PROJECT_DIR$/.idea/libraries/commons_fileupload_1_3_2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cloud_storage/controller/TPA_controller.java" afterPath="$PROJECT_DIR$/src/com/cloud_storage/controller/TPA_controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cloud_storage/controller/upload_page.java" afterPath="$PROJECT_DIR$/src/com/cloud_storage/controller/upload_page.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cloud_storage/service/file_service.java" afterPath="$PROJECT_DIR$/src/com/cloud_storage/service/file_service.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cloud_storage/service_inter/file_service_inter.java" afterPath="$PROJECT_DIR$/src/com/cloud_storage/service_inter/file_service_inter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cloud_storage/util/Properties.java" afterPath="$PROJECT_DIR$/src/com/cloud_storage/util/Properties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/cloud_storage/util/util.java" afterPath="$PROJECT_DIR$/src/com/cloud_storage/util/util.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cloud_storage.iml" afterPath="$PROJECT_DIR$/Cloud_storage.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/config.properties" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/config.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/register.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/register.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/config.properties" afterPath="$PROJECT_DIR$/web/WEB-INF/config.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pages/index.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/pages/register.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/pages/register.jsp" />
     </list>
     <ignored path="Cloud_storage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,33 +120,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="file_service.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/service/file_service.java">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+            <state relative-caret-position="191">
+              <caret line="98" column="88" lean-forward="false" selection-start-line="98" selection-start-column="88" selection-end-line="99" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="util.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/util/util.java">
+      <file leaf-file-name="dispatcher-servlet.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="114" column="73" selection-start-line="114" selection-start-column="73" selection-end-line="114" selection-end-column="73" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="315">
+              <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CaptchaUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/util/CaptchaUtil.java">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="70" column="54" selection-start-line="70" selection-start-column="54" selection-end-line="70" selection-end-column="54" />
+            <state relative-caret-position="336">
+              <caret line="84" column="10" lean-forward="false" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -74,38 +153,76 @@
       <file leaf-file-name="Properties.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/util/Properties.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+            <state relative-caret-position="-118">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="file_service_inter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/service_inter/file_service_inter.java">
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/config.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
+            <state relative-caret-position="45">
+              <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="upload_page.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/controller/upload_page.java">
+      <file leaf-file-name="applicationContext.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="64" column="51" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
+            <state relative-caret-position="145">
+              <caret line="40" column="36" lean-forward="true" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TPA_controller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/controller/TPA_controller.java">
+      <file leaf-file-name="File_DAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/DAO/File_DAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+            <state relative-caret-position="120">
+              <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="m_File.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/mapper/m_File.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1335">
+              <caret line="89" column="47" lean-forward="false" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
+              <folding>
+                <marker date="1490505892000" expanded="true" signature="315:360" ph="select * fro... file" />
+                <marker date="1490505892000" expanded="true" signature="470:545" ph="select * fro... user_file" />
+                <marker date="1490505892000" expanded="true" signature="640:931" ph="SELECT user_... " />
+                <marker date="1490505892000" expanded="true" signature="1090:1140" ph="select * fro... user_file" />
+                <marker date="1490505892000" expanded="true" signature="1300:1368" ph="select * fro... user_file" />
+                <marker date="1490505892000" expanded="true" signature="1483:1617" ph="insert into file_share... " />
+                <marker date="1490505892000" expanded="true" signature="1986:2058" ph="select * fro... file_share" />
+                <marker date="1490505892000" expanded="true" signature="2154:2202" ph="select nums file" />
+                <marker date="1490505892000" expanded="true" signature="2280:2336" ph="update file " />
+                <marker date="1490505892000" expanded="true" signature="2414:2470" ph="update file " />
+                <marker date="1490505892000" expanded="true" signature="2538:2665" ph="update file_... " />
+                <marker date="1490505892000" expanded="true" signature="2819:2981" ph="insert into file... " />
+                <marker date="1490505892000" expanded="true" signature="3145:3291" ph="insert into user_file... " />
+                <marker date="1490505892000" expanded="true" signature="3351:3440" ph="update user_... " />
+                <marker date="1490505892000" expanded="true" signature="3500:3594" ph="update user_... " />
+                <marker date="1490505892000" expanded="true" signature="3654:3725" ph="delete from " />
+                <marker date="1490505892000" expanded="true" signature="3799:3840" ph="delete from " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/register.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="91" column="79" lean-forward="false" selection-start-line="91" selection-start-column="79" selection-end-line="91" selection-end-column="79" />
               <folding />
             </state>
           </provider>
@@ -136,13 +253,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/WEB-INF/pages/fileupload.jsp" />
         <option value="$PROJECT_DIR$/web/js/check.js" />
         <option value="$PROJECT_DIR$/src/com/cloud_storage/entity/File_share.java" />
         <option value="$PROJECT_DIR$/src/com/cloud_storage/entity/Friend_apply.java" />
         <option value="$PROJECT_DIR$/src/com/cloud_storage/property/config.properties" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/com/cloud_storage/util/ConfigInfo.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pages/profile_upload.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/pages/profileupload.jsp" />
@@ -159,9 +273,7 @@
         <option value="$PROJECT_DIR$/src/com/cloud_storage/service/TPA_service_inter.java" />
         <option value="$PROJECT_DIR$/src/com/cloud_storage/mapper/m_TPA.xml" />
         <option value="$PROJECT_DIR$/src/com/cloud_storage/util/CaptchaUtil.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/pages/index.jsp" />
         <option value="$PROJECT_DIR$/web/css/login.css" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/pages/register.jsp" />
         <option value="$PROJECT_DIR$/src/com/cloud_storage/service_inter/friend_service_inter.java" />
         <option value="$PROJECT_DIR$/src/com/cloud_storage/service/friend_service.java" />
         <option value="$PROJECT_DIR$/src/com/cloud_storage/DAO/Friend_DAO.java" />
@@ -185,8 +297,13 @@
         <option value="$PROJECT_DIR$/src/com/cloud_storage/controller/upload_page.java" />
         <option value="$PROJECT_DIR$/src/com/cloud_storage/util/Properties.java" />
         <option value="$PROJECT_DIR$/src/com/cloud_storage/controller/TPA_controller.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/config.properties" />
         <option value="$PROJECT_DIR$/src/com/cloud_storage/util/util.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pages/register.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/pages/index.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/config.properties" />
       </list>
     </option>
   </component>
@@ -203,31 +320,14 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="Bundled (Maven 3)" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="MavenProjectNavigator">
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
+    <option name="x" value="150" />
+    <option name="y" value="31" />
+    <option name="width" value="1280" />
+    <option name="height" value="706" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -248,27 +348,21 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
+              <option name="myItemId" value="newcloud" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
+              <option name="myItemId" value="newcloud" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
+              <option name="myItemId" value="newcloud" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
+              <option name="myItemId" value="newcloud" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -282,33 +376,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
+              <option name="myItemId" value="newcloud" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
+              <option name="myItemId" value="newcloud" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -318,29 +390,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
+              <option name="myItemId" value="newcloud" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
+              <option name="myItemId" value="newcloud" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -349,162 +403,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service_inter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mapper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="entity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DAO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cloud_storage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/杂七杂八/mybatis整合springMvc完整jar包/lib/quartz-all-1.6.6.jar!/" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/js" />
+      <recent name="D:\Cloud_storage\web\WEB-INF" />
+      <recent name="D:\Cloud_storage\web\WEB-INF\lib" />
+      <recent name="D:\Cloud_storage\web\css" />
+      <recent name="D:\Cloud_storage\web\WEB-INF\pages" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Cloud_storage\src\com\cloud_storage\property" />
       <recent name="D:\Cloud_storage\web\WEB-INF" />
@@ -512,93 +438,8 @@
       <recent name="D:\Cloud_storage\web" />
       <recent name="D:\Cloud_storage\web\WEB-INF\pages" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Cloud_storage\web\WEB-INF" />
-      <recent name="D:\Cloud_storage\web\WEB-INF\lib" />
-      <recent name="D:\Cloud_storage\web\css" />
-      <recent name="D:\Cloud_storage\web\WEB-INF\pages" />
-      <recent name="D:\Cloud_storage\web\WEB-INF\img" />
-    </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Unnamed">
-    <configuration default="false" name="fileupload.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0.53" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WEB-INF/pages/fileupload.jsp" />
-      <deployment>
-        <artifact name="Cloud_storage:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="fileupload_jsp_Cloud_storage" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Cloud_storage:war exploded" />
-        </option>
-      </method>
-    </configuration>
-    <configuration default="false" name="register.jsp" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" temporary="true" APPLICATION_SERVER_NAME="Tomcat 7.0.53" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/WEB-INF/pages/register.jsp" />
-      <deployment>
-        <artifact name="Cloud_storage:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="register_jsp_Cloud_storage" />
-      </server-settings>
-      <predefined_log_file id="Tomcat" enabled="true" />
-      <predefined_log_file id="Tomcat Catalina" enabled="true" />
-      <predefined_log_file id="Tomcat Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
-      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method>
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Cloud_storage:war exploded" />
-        </option>
-      </method>
-    </configuration>
     <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <deployment />
       <server-settings />
@@ -614,9 +455,10 @@
       <module name="" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
       <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
       <method />
     </configuration>
-    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
       <option name="ARTIFACT_NAME" value="" />
@@ -626,7 +468,7 @@
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
       <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
       <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="DEBUGGER_TYPE" value="Java" />
@@ -634,7 +476,11 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <option name="DEEP_LINK" value="" />
       <option name="ACTIVITY_CLASS" value="" />
@@ -659,7 +505,11 @@
       <option name="PREFERRED_AVD" value="" />
       <Java />
       <Profilers>
+        <option name="ENABLE_ADVANCED_PROFILING" value="true" />
+        <option name="GAPID_ENABLED" value="false" />
         <option name="GAPID_DISABLE_PCS" value="false" />
+        <option name="SUPPORT_LIB_ENABLED" value="true" />
+        <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
       <method />
     </configuration>
@@ -837,6 +687,7 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
       <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
@@ -853,27 +704,6 @@
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -901,6 +731,12 @@
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -974,34 +810,6 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -1012,7 +820,7 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run-script" />
+      <command value="run" />
       <scripts />
       <node-interpreter value="project" />
       <envs />
@@ -1024,7 +832,7 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 7.0.70" ALTERNATIVE_JRE_ENABLED="false">
+    <configuration default="false" name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.0.M9" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="Cloud_storage:war exploded">
@@ -1096,17 +904,33 @@
         </option>
       </method>
     </configuration>
-    <list size="3">
+    <list size="1">
       <item index="0" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.fileupload.jsp" />
-      <item index="2" class="java.lang.String" itemvalue="Tomcat Server.register.jsp" />
     </list>
-    <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Tomcat Server.register.jsp" />
-        <item index="1" class="java.lang.String" itemvalue="Tomcat Server.fileupload.jsp" />
-      </list>
-    </recent_temporary>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="DEBUGGER_TYPE" value="Java" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <Java />
+      <Profilers>
+        <option name="GAPID_DISABLE_PCS" value="false" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -1152,46 +976,63 @@
       <workItem from="1490272095118" duration="4155000" />
       <workItem from="1490318374645" duration="14495000" />
       <workItem from="1490356518210" duration="5758000" />
+      <workItem from="1490505962688" duration="2224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="171871000" />
+    <option name="totallyTimeSpent" value="174095000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
-    <editor active="false" />
+    <frame x="150" y="31" width="1280" height="706" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937685" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284553" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284553" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22768533" sideWeight="0.49199083" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25567323" sideWeight="0.50800914" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3284553" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32520324" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4397394" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3276923" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23101777" sideWeight="0.49199083" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25567323" sideWeight="0.50800914" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -1213,181 +1054,137 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/homepage.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/mapper/m_File.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/DAO/Friend_DAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/entity/Tpa.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <caret line="10" column="25" lean-forward="false" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/DAO/Message_DAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/mapper/m_Message.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="54" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/DAO/TPA_DAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/service/TPA_service.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/service_inter/TPA_service_inter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
-          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
+          <caret line="6" column="48" lean-forward="false" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/mapper/m_User.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-993">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/mapper/m_TPA.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" column="91" selection-start-line="7" selection-start-column="91" selection-end-line="7" selection-end-column="91" />
+          <caret line="7" column="91" lean-forward="false" selection-start-line="7" selection-start-column="91" selection-end-line="7" selection-end-column="91" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="817">
-          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+          <caret line="43" column="14" lean-forward="false" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/register.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/entity/Friend_apply.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/service_inter/friend_service_inter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
-          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+          <caret line="14" column="59" lean-forward="false" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/service/friend_service.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="40" column="26" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/controller/register.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="623">
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/fileUpload.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1026">
-          <caret line="54" column="31" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="54" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <caret line="54" column="31" lean-forward="false" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/comment.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
-          <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
+          <caret line="12" column="80" lean-forward="false" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/profileUpload.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/controller/message_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="38" column="30" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+          <caret line="38" column="30" lean-forward="false" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1395,61 +1192,51 @@
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/mapper/m_Friend.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
-          <caret line="36" column="124" selection-start-line="36" selection-start-column="124" selection-end-line="36" selection-end-column="124" />
-          <folding>
-            <marker date="1489069458824" expanded="true" signature="321:445" ph="(select user... " />
-            <marker date="1489069458824" expanded="true" signature="322:378" ph="select user_... friends" />
-            <marker date="1489069458824" expanded="true" signature="388:444" ph="select user_... friends" />
-            <marker date="1489069458824" expanded="true" signature="561:684" ph="insert into friend_apply... " />
-            <marker date="1489069458824" expanded="true" signature="753:888" ph="update frien... " />
-            <marker date="1489069458824" expanded="true" signature="1296:1370" ph="select * fro... friend_apply" />
-            <marker date="1489069458824" expanded="true" signature="1501:1617" ph="select count... friend_apply" />
-            <marker date="1489069458824" expanded="true" signature="1690:1831" ph="select count... friends" />
-            <marker date="1489069458824" expanded="true" signature="1930:2008" ph="insert into friends... " />
-          </folding>
+          <caret line="36" column="124" lean-forward="false" selection-start-line="36" selection-start-column="124" selection-end-line="36" selection-end-column="124" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/DAO/Friend_DAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/entity/File.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
-            <element signature="e#683#684#0" expanded="true" />
-            <element signature="e#713#714#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#829#830#0" expanded="true" />
-            <element signature="e#860#861#0" expanded="true" />
-            <element signature="e#908#909#0" expanded="true" />
-            <element signature="e#948#949#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1016#1017#0" expanded="true" />
-            <element signature="e#1066#1067#0" expanded="true" />
-            <element signature="e#1108#1109#0" expanded="true" />
-            <element signature="e#1136#1137#0" expanded="true" />
-            <element signature="e#1163#1164#0" expanded="true" />
-            <element signature="e#1200#1201#0" expanded="true" />
-            <element signature="e#1232#1233#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
-            <element signature="e#1290#1291#0" expanded="true" />
-            <element signature="e#1330#1331#0" expanded="true" />
-            <element signature="e#1362#1363#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
-            <element signature="e#1420#1421#0" expanded="true" />
-            <element signature="e#1460#1461#0" expanded="true" />
-            <element signature="e#1492#1493#0" expanded="true" />
-            <element signature="e#1527#1528#0" expanded="true" />
-            <element signature="e#1561#1562#0" expanded="true" />
-            <element signature="e#1612#1613#0" expanded="true" />
-            <element signature="e#1658#1659#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="false" />
+            <element signature="e#713#714#0" expanded="false" />
+            <element signature="e#756#757#0" expanded="false" />
+            <element signature="e#794#795#0" expanded="false" />
+            <element signature="e#829#830#0" expanded="false" />
+            <element signature="e#860#861#0" expanded="false" />
+            <element signature="e#908#909#0" expanded="false" />
+            <element signature="e#948#949#0" expanded="false" />
+            <element signature="e#984#985#0" expanded="false" />
+            <element signature="e#1016#1017#0" expanded="false" />
+            <element signature="e#1066#1067#0" expanded="false" />
+            <element signature="e#1108#1109#0" expanded="false" />
+            <element signature="e#1136#1137#0" expanded="false" />
+            <element signature="e#1163#1164#0" expanded="false" />
+            <element signature="e#1200#1201#0" expanded="false" />
+            <element signature="e#1232#1233#0" expanded="false" />
+            <element signature="e#1263#1264#0" expanded="false" />
+            <element signature="e#1290#1291#0" expanded="false" />
+            <element signature="e#1330#1331#0" expanded="false" />
+            <element signature="e#1362#1363#0" expanded="false" />
+            <element signature="e#1393#1394#0" expanded="false" />
+            <element signature="e#1420#1421#0" expanded="false" />
+            <element signature="e#1460#1461#0" expanded="false" />
+            <element signature="e#1492#1493#0" expanded="false" />
+            <element signature="e#1527#1528#0" expanded="false" />
+            <element signature="e#1561#1562#0" expanded="false" />
+            <element signature="e#1612#1613#0" expanded="false" />
+            <element signature="e#1658#1659#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1457,46 +1244,40 @@
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/entity/User_File.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
-          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+          <caret line="49" column="29" lean-forward="false" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
           <folding>
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#808#809#0" expanded="true" />
-            <element signature="e#851#852#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-            <element signature="e#955#956#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="e#1043#1044#0" expanded="true" />
-            <element signature="e#1101#1102#0" expanded="true" />
-            <element signature="e#1141#1142#0" expanded="true" />
-            <element signature="e#1173#1174#0" expanded="true" />
-            <element signature="e#1206#1207#0" expanded="true" />
-            <element signature="e#1238#1239#0" expanded="true" />
-            <element signature="e#1285#1286#0" expanded="true" />
-            <element signature="e#1327#1328#0" expanded="true" />
-            <element signature="e#1358#1359#0" expanded="true" />
-            <element signature="e#1385#1386#0" expanded="true" />
-            <element signature="e#1425#1426#0" expanded="true" />
-            <element signature="e#1457#1458#0" expanded="true" />
+            <element signature="e#636#637#0" expanded="false" />
+            <element signature="e#666#667#0" expanded="false" />
+            <element signature="e#709#710#0" expanded="false" />
+            <element signature="e#747#748#0" expanded="false" />
+            <element signature="e#778#779#0" expanded="false" />
+            <element signature="e#808#809#0" expanded="false" />
+            <element signature="e#851#852#0" expanded="false" />
+            <element signature="e#889#890#0" expanded="false" />
+            <element signature="e#924#925#0" expanded="false" />
+            <element signature="e#955#956#0" expanded="false" />
+            <element signature="e#1003#1004#0" expanded="false" />
+            <element signature="e#1043#1044#0" expanded="false" />
+            <element signature="e#1101#1102#0" expanded="false" />
+            <element signature="e#1141#1142#0" expanded="false" />
+            <element signature="e#1173#1174#0" expanded="false" />
+            <element signature="e#1206#1207#0" expanded="false" />
+            <element signature="e#1238#1239#0" expanded="false" />
+            <element signature="e#1285#1286#0" expanded="false" />
+            <element signature="e#1327#1328#0" expanded="false" />
+            <element signature="e#1358#1359#0" expanded="false" />
+            <element signature="e#1385#1386#0" expanded="false" />
+            <element signature="e#1425#1426#0" expanded="false" />
+            <element signature="e#1457#1458#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_67/src.zip!/java/util/HashMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="123" column="13" selection-start-line="123" selection-start-column="13" selection-end-line="123" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_67/src.zip!/java/util/HashMap.java" />
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/file_detail.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
-          <caret line="46" column="116" selection-start-line="46" selection-start-column="116" selection-end-line="46" selection-end-column="116" />
+          <caret line="46" column="116" lean-forward="false" selection-start-line="46" selection-start-column="116" selection-end-line="46" selection-end-column="116" />
           <folding />
         </state>
       </provider>
@@ -1504,7 +1285,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/controller/user_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="213">
-          <caret line="92" column="40" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
+          <caret line="92" column="40" lean-forward="false" selection-start-line="92" selection-start-column="40" selection-end-line="92" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1512,7 +1293,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/controller/main_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1520,7 +1301,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/service/user_service.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1528,7 +1309,7 @@
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/homepage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
-          <caret line="91" column="29" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
+          <caret line="91" column="29" lean-forward="false" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1536,99 +1317,85 @@
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/userpage.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/DAO/File_DAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="30" column="15" selection-start-line="30" selection-start-column="15" selection-end-line="30" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/mapper/m_File.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1691">
-          <caret line="89" column="47" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
-          <folding>
-            <marker date="1490332513961" expanded="true" signature="315:360" ph="select * fro... file" />
-            <marker date="1490332513961" expanded="true" signature="470:545" ph="select * fro... user_file" />
-            <marker date="1490332513961" expanded="true" signature="640:931" ph="SELECT user_... " />
-            <marker date="1490332513961" expanded="true" signature="1090:1140" ph="select * fro... file" />
-            <marker date="1490332513961" expanded="true" signature="1300:1368" ph="select * fro... file" />
-            <marker date="1490332513961" expanded="true" signature="1483:1617" ph="insert into file_share... " />
-            <marker date="1490332513961" expanded="true" signature="1986:2058" ph="select * fro... file_share" />
-            <marker date="1490332513961" expanded="true" signature="2154:2202" ph="select nums file" />
-            <marker date="1490332513961" expanded="true" signature="2280:2336" ph="update file " />
-            <marker date="1490332513961" expanded="true" signature="2414:2470" ph="update file " />
-            <marker date="1490332513961" expanded="true" signature="2538:2665" ph="update file_... " />
-            <marker date="1490332513961" expanded="true" signature="2819:2981" ph="insert into file... " />
-            <marker date="1490332513961" expanded="true" signature="3145:3291" ph="insert into user_file... " />
-            <marker date="1490332513961" expanded="true" signature="3351:3415" ph="update file " />
-            <marker date="1490332513961" expanded="true" signature="3351:3440" ph="update user_... " />
-            <marker date="1490332513961" expanded="true" signature="3500:3569" ph="update file " />
-            <marker date="1490332513961" expanded="true" signature="3500:3594" ph="update user_... " />
-            <marker date="1490332513961" expanded="true" signature="3654:3725" ph="delete from " />
-            <marker date="1490332513961" expanded="true" signature="3799:3840" ph="delete from " />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/controller/file_detail_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
-          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+          <caret line="38" column="45" lean-forward="false" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_67/src.zip!/java/io/File.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/controller/homepage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="32" column="4" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="4" />
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_67/src.zip!/java/sql/Date.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/util/util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1380">
+          <caret line="92" column="43" lean-forward="true" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/service/file_service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="77" column="27" lean-forward="false" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#1261#1262#0" expanded="false" />
+            <element signature="e#1321#1322#0" expanded="false" />
+            <element signature="e#1385#1386#0" expanded="false" />
+            <element signature="e#1454#1455#0" expanded="false" />
+            <element signature="e#2643#2644#0" expanded="false" />
+            <element signature="e#2695#2696#0" expanded="false" />
+            <element signature="e#3244#3245#0" expanded="false" />
+            <element signature="e#3312#3313#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/jquery.md5.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/util/CaptchaUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="70" column="54" lean-forward="false" selection-start-line="70" selection-start-column="54" selection-end-line="70" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/service_inter/file_service_inter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="23" column="55" selection-start-line="23" selection-start-column="55" selection-end-line="23" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_67/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="148" column="13" selection-start-line="148" selection-start-column="13" selection-end-line="148" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/controller/homepage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_67/src.zip!/java/sql/Date.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="69" column="11" selection-start-line="69" selection-start-column="11" selection-end-line="69" selection-end-column="11" />
-          <folding />
+        <state relative-caret-position="195">
+          <caret line="16" column="53" lean-forward="true" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/controller/upload_page.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
-          <caret line="64" column="51" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
+          <caret line="64" column="51" lean-forward="false" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
           <folding />
         </state>
       </provider>
@@ -1636,50 +1403,106 @@
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/controller/TPA_controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="86" column="35" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+          <caret line="86" column="35" lean-forward="false" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/config.properties">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        <state relative-caret-position="68">
+          <caret line="91" column="79" lean-forward="false" selection-start-line="91" selection-start-column="79" selection-end-line="91" selection-end-column="79" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/service/file_service.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/pages/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
+        <state relative-caret-position="191">
+          <caret line="98" column="88" lean-forward="false" selection-start-line="98" selection-start-column="88" selection-end-line="99" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/util/CaptchaUtil.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="70" column="54" selection-start-line="70" selection-start-column="54" selection-end-line="70" selection-end-column="54" />
+        <state relative-caret-position="315">
+          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="84" column="10" lean-forward="false" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/DAO/File_DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/mapper/m_File.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="89" column="47" lean-forward="false" selection-start-line="89" selection-start-column="47" selection-end-line="89" selection-end-column="47" />
+          <folding>
+            <marker date="1490505892000" expanded="true" signature="315:360" ph="select * fro... file" />
+            <marker date="1490505892000" expanded="true" signature="470:545" ph="select * fro... user_file" />
+            <marker date="1490505892000" expanded="true" signature="640:931" ph="SELECT user_... " />
+            <marker date="1490505892000" expanded="true" signature="1090:1140" ph="select * fro... user_file" />
+            <marker date="1490505892000" expanded="true" signature="1300:1368" ph="select * fro... user_file" />
+            <marker date="1490505892000" expanded="true" signature="1483:1617" ph="insert into file_share... " />
+            <marker date="1490505892000" expanded="true" signature="1986:2058" ph="select * fro... file_share" />
+            <marker date="1490505892000" expanded="true" signature="2154:2202" ph="select nums file" />
+            <marker date="1490505892000" expanded="true" signature="2280:2336" ph="update file " />
+            <marker date="1490505892000" expanded="true" signature="2414:2470" ph="update file " />
+            <marker date="1490505892000" expanded="true" signature="2538:2665" ph="update file_... " />
+            <marker date="1490505892000" expanded="true" signature="2819:2981" ph="insert into file... " />
+            <marker date="1490505892000" expanded="true" signature="3145:3291" ph="insert into user_file... " />
+            <marker date="1490505892000" expanded="true" signature="3351:3440" ph="update user_... " />
+            <marker date="1490505892000" expanded="true" signature="3500:3594" ph="update user_... " />
+            <marker date="1490505892000" expanded="true" signature="3654:3725" ph="delete from " />
+            <marker date="1490505892000" expanded="true" signature="3799:3840" ph="delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5f1c9870-85d7-4e96-9711-c06a61bd4dbe/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="40" column="36" lean-forward="true" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/util/Properties.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="52" column="10" selection-start-line="52" selection-start-column="10" selection-end-line="52" selection-end-column="10" />
+        <state relative-caret-position="-118">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/cloud_storage/util/util.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/config.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="114" column="73" selection-start-line="114" selection-start-column="73" selection-end-line="114" selection-end-column="73" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="45">
+          <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1725,7 +1548,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>1.7</last-edited>
+          <last-edited>1.8</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1742,7 +1565,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1762,7 +1584,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>aopalliance-1.01</last-edited>
+          <last-edited>google-gson-2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
