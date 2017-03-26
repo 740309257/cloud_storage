@@ -10,7 +10,27 @@
 	<script src="<%=request.getContextPath()%>/js/jquery-1.8.2.min.js"></script>
 	<script src="<%=request.getContextPath()%>/js/jquery-ui.min.js.js"></script>
 
+	<script src="<%=request.getContextPath()%>/js/jquery.md5.js"></script>
+	<script>
+        function md5Encryption(obj){
+            var login_pwd=document.getElementById("login_password").value;
+            if(login_pwd != null)
+            {
+                var en_pwd=$.md5(login_pwd).substring(0,20);
+                $("#login_password").val(en_pwd);
+            }
+        }
 
+	</script>
+
+	<script>
+        function doKeyDown(){
+            if(event.keyCode == 13)
+            {
+                submit_form(this);
+            }
+        }
+	</script>
 	<script>
 		function submit_form(obj) {
 			$.ajax({
@@ -41,7 +61,7 @@
 		});
 	</script>
 </head> 
-<body>
+<body onkeypress="doKeyDown()">
 
 
 <form  class="s_user" action="/search_user" method="post">
@@ -61,7 +81,7 @@
     <form method="post" action="/verify" id="login_form">
 		<input name="login_username" placeholder="用户名" required="" type="text">
 		<hr class="hr15">
-		<input name="login_password" placeholder="密码" required="" type="password">
+		<input id="login_password" name="login_password" placeholder="密码" required="" type="password" onblur="md5Encryption(this)">
 		<hr class="hr15">
 
 		<img id="captchaImage" src="/captcha" style="width: 35%;float: left;margin-right: 7px;height: 30px"/>
