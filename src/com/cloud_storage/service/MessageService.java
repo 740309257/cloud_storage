@@ -14,7 +14,7 @@ import java.util.List;
  * Created by dell on 1/24/2017.
  */
 @Service
-public class message_service implements message_service_inter {
+public class MessageService implements message_service_inter {
     @Autowired
     private Message_DAO message_dao;
 

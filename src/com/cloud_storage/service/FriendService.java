@@ -17,7 +17,7 @@ import java.util.List;
  * Created by dell on 1/24/2017.
  */
 @Service
-public class friend_service implements friend_service_inter {
+public class FriendService implements friend_service_inter {
     @Autowired
     private Friend_DAO friend_dao;
     @Autowired

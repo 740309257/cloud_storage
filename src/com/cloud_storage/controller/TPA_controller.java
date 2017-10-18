@@ -2,14 +2,12 @@ package com.cloud_storage.controller;
 
 import com.cloud_storage.entity.User;
 import com.cloud_storage.entity.User_File;
-import com.cloud_storage.service.file_service;
 import com.cloud_storage.service_inter.TPA_service_inter;
 import com.cloud_storage.service_inter.file_service_inter;
 import com.cloud_storage.service_inter.user_service_inter;
 import com.cloud_storage.util.util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -95,7 +93,7 @@ public class TPA_controller {
                 user_file.setFilename(filename);
 
                 if (file_service.add_user_file(user_file)) {
-                    System.out.println("Files uploaded successfully!");
+                    System.out.println("Files were uploaded successfully!");
                     writer.write("true");
                     writer.flush();
                     writer.close();

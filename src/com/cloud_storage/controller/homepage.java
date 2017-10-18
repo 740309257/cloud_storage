@@ -39,8 +39,8 @@ public class homepage {
 
 
     //自己的主页，返回文件，朋友，加好友申请，***分享文件申请
-    @RequestMapping(value = "/homepage/{user_id}")
-    public String home(@PathVariable("user_id")String user_id,HttpSession session, ModelMap m){
+    @RequestMapping(value = "/homepage/{userId}")
+    public String home(@PathVariable("userId")String user_id,HttpSession session, ModelMap m){
         if(!util.is_login(session,Integer.parseInt(user_id))){
             return "redirect:/main_page";
         }

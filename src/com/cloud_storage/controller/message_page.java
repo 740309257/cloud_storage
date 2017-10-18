@@ -47,8 +47,8 @@ public class message_page {
         }
     }
 
-    @RequestMapping(value = "/comment/{message_id}")
-    public String comment(@PathVariable("message_id")String message_id, ModelMap m){
+    @RequestMapping(value = "/comment/{messageId}")
+    public String comment(@PathVariable("messageId")String message_id, ModelMap m){
         List<Comment> comments=message_service.getComment(Integer.parseInt(message_id));
         m.addAttribute("message_id",message_id);
         m.addAttribute("l_comment",comments);

@@ -14,7 +14,7 @@ import java.util.List;
  * Created by dell on 1/23/2017.
  */
 @Service
-public class user_service implements user_service_inter {
+public class UserService implements user_service_inter {
     @Autowired
     private User_DAO user_dao;
 

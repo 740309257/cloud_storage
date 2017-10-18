@@ -20,7 +20,7 @@ import java.util.List;
  * Created by dell on 1/26/2017.
  */
 @Service
-public class file_service implements file_service_inter {
+public class FileService implements file_service_inter {
     @Autowired
     File_DAO file_dao;
     @Autowired

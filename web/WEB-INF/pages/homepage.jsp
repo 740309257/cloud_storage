@@ -79,7 +79,7 @@ ${user.getUsername()}
 </c:forEach>
 
 <p>我的文件</p>
-<c:forEach items="${l_file}" var="file" varStatus="s" begin="0" end="${l_file.size()}">
+ <c:forEach items="${l_file}" var="file" varStatus="s" begin="0" end="${l_file.size()}">
     <tr>
 
         <td>
@@ -93,7 +93,7 @@ ${user.getUsername()}
         </td>
 
     </tr>
-</c:forEach>
+ </c:forEach>
 <p>我的朋友</p>
 <c:forEach items="${l_friend}" var="friend" varStatus="s" begin="0" end="${l_friend.size()}">
     <tr>

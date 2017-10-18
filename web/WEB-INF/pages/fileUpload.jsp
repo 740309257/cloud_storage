@@ -58,8 +58,8 @@
 
     function uploadProgress(evt) {
         if (evt.lengthComputable) {
-            var percentComplete = Math.round(evt.loaded * 100 / evt.total);
-            document.getElementById('progressNumber').innerHTML = percentComplete.toString() + '%';
+             var percentComplete = Math.round(evt.loaded * 100 / evt.total);
+             document.getElementById('progressNumber').innerHTML = percentComplete.toString() + '%';
         }
         else {
             document.getElementById('progressNumber').innerHTML = 'unable to compute';
