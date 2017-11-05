@@ -1,0 +1,121 @@
+html {
+    font-size: 100px;
+}
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    text-align: center;
+}
+.left_box{
+    height: 100%;
+    width: 24%;
+    float: left;
+    /*border-right: solid 0.1rem black;*/
+    background-color: #c7e3f1;
+}
+
+.right_box{
+    height: 100%;
+    width: 76%;
+    box-sizing: border-box;
+    border-left: 3rem solid white;
+    float: left;
+    background-color: aliceblue;
+}
+
+
+#folder_head{
+    position: absolute;
+    width: 3.8rem;
+    height: 14rem;
+    top: 20rem;
+    left: 0;
+    border: 0.2rem solid #dae0ee;
+    font-size: 2.2rem;
+    background-color: white;
+    border-radius: 0.6rem;
+}
+
+#folder_head p{
+    width: 80%;
+    margin:0.4rem 0.6rem;
+    float: left;
+}
+
+#folder_list{
+    /*width: 18rem;*/
+    width: 80%;
+    max-width: 21rem;
+    margin-top: 10rem;
+    margin-right: 2rem;
+    float: right;
+    list-style-type: none;
+    border:0.2rem solid #27A9E3;
+    border-radius: 0.6rem;
+}
+
+.folder_li{
+    width: 100%;
+    height: 6rem;
+    /*margin-top: 0.6rem;*/
+    font-size: 1.8rem;
+    box-sizing: border-box;
+    border-bottom: 0.2rem solid white;
+}
+.folder_li img{
+    position: relative;
+    width: 4rem;
+    height: 4rem;
+    top: 1rem;
+    left: 1rem;
+    float: left;
+}
+.folder_li a{
+    height: 100%;
+    width: 74%;
+    max-width: 15rem;
+    /*min-width: 12rem;*/
+    line-height: 6rem;
+    float: right;
+    display: block;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+    box-sizing: border-box;
+    border-left: 0.3rem solid transparent;
+}
+
+.folder_li a:hover,.folder_li a:active{
+    background-color: darkgrey;
+    border-left: 0.3rem solid #27A9E3;
+}
+
+#current_pos{
+    text-align: left;
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+
+.upload_btn{
+    width: 12rem;
+    height: 4rem;
+}
+.upload_btn a{
+    height: 100%;
+    display: block;
+    border-radius: 0.6rem;
+    background-color: blue;
+    /*text-align: left;*/
+}
+.upload_btn img{
+    margin: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+    display: inline-block;
+}
+.upload_btn span{
+    height: 4rem;
+    display: inline-block;
+    font-size: 1.4rem;
+    vertical-align: top;
+    line-height: 4rem;
+}

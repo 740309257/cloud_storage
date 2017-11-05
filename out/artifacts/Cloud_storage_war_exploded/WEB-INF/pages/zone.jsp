@@ -18,7 +18,7 @@
     <input type="submit" value="PUBLISH">
 </form>
 
-<c:forEach items="${l_message}" var="message" varStatus="s" begin="0" end="${l_message.size()}">
+ <c:forEach items="${l_message}" var="message" varStatus="s" begin="0" end="${l_message.size()}">
     <tr>
         <td>
             <div>
@@ -36,6 +36,6 @@
         </td>
 
     </tr>
-</c:forEach>
+ </c:forEach>
 </body>
 </html>
