@@ -2,14 +2,15 @@ html {
     font-size: 100px;
 }
 
-
-
 * {
     margin: 0;
     border: 0;
     padding: 0;
     text-align: center;
+}
 
+a{
+    text-decoration: none;
 }
 
 .left_box {
@@ -37,6 +38,8 @@ html {
     top: 20rem;
     left: 0;
     border: 0.2rem solid #dae0ee;
+    border-left: 0.3rem solid #27A9E3;
+    box-sizing: border-box;
     font-size: 2.2rem;
     background-color: white;
     border-radius: 0.6rem;
@@ -121,7 +124,8 @@ html {
     background-color: #27A9E3;
     text-align: left;
 }
-.upload_btn a:hover{
+
+.upload_btn a:hover {
     background-color: blue;
 }
 
@@ -135,9 +139,10 @@ html {
 .upload_btn span {
     height: 4rem;
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     vertical-align: top;
     line-height: 4rem;
+    color: wheat;
 }
 
 .file_nav {
@@ -156,6 +161,7 @@ html {
     line-height: 3rem;
     box-sizing: border-box;
     border-top: solid 0.2rem transparent;
+    color: cornflowerblue;
 }
 
 .file_nav a:hover, .file_nav a:active {
@@ -186,7 +192,8 @@ html {
 
 .search_bar #searchContent {
     height: 100%;
-    width: 36%;
+    width: 33%;
+    padding-left: 0.6rem;
     border: solid 0.1rem #676262;
     text-align: left;
     float: left;
@@ -231,6 +238,11 @@ html {
 
 .file_table td {
     border-bottom: solid 0.1rem #555555;
+}
+
+
+.file_table a {
+    color: #27A9E3;
 }
 
 .fname {

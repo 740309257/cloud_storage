@@ -74,11 +74,13 @@
 			text-align: center;
 			padding: 0 1rem;
 			box-sizing: border-box;
+			color: #27A9E3;
 		}
 
 		.header_nav ul li a:hover, .header_nav ul li a:active {
 			background-color: darkgrey;
 			border-bottom: 0.3rem solid #5a5757;
+			color: black;
 		}
 
 		.header_right {
@@ -94,10 +96,17 @@
 
 		.header_right a {
 			height: 100%;
-			line-height: 3.4rem;
+			line-height: 3rem;
 			display: block;
 			font-size: 1.6rem;
 			text-decoration: none;
+			color: white;
+			border-radius: 0.6rem;
+		}
+
+		.header_right a:hover{
+			background-color: #5a5757;
+			color: black;
 		}
 	</style>
 </head>
@@ -110,16 +119,16 @@
 	</div>
 	<div class="header_nav">
 		<ul class="nav_ul">
-			<li><a>首页</a></li>
-			<li><a>文件管理</a></li>
-			<li><a>营销中心</a></li>
-			<li><a>财务中心</a></li>
-			<li><a>设置中心</a></li>
+			<li><a href="">首页</a></li>
+			<li><a href="">文件管理</a></li>
+			<li><a href="">营销中心</a></li>
+			<li><a href="">财务中心</a></li>
+			<li><a href="">设置中心</a></li>
 		</ul>
 	</div>
 
 	<div class="header_right">
-		<a class="logout">退出登录</a>
+		<a class="logout" href="">退出登录</a>
 	</div>
 </div>
 </body>

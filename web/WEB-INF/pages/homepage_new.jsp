@@ -46,9 +46,9 @@
 	</div>
 
 	<div class="file_nav">
-		<a>最近上传</a>
-		<a>我的收藏</a>
-		<a>垃圾箱</a>
+		<a href="">最近上传</a>
+		<a href="">我的收藏</a>
+		<a href="">垃圾箱</a>
 	</div>
 
 	<div class="search_bar">
@@ -75,11 +75,11 @@
 			</tr>
 
 			<tr>
-				<td class="fname">文件名称</td>
+				<td class="fname"><a href="">文件名称</a></td>
 				<td class="fsize">大小</td>
 				<td class="ftype">类型</td>
 				<td class="fupTime">上传时间</td>
-				<td class="foper">操作</td>
+				<td class="foper"><a href="">下载</a>&nbsp;&nbsp;<a href="">更多</a></td>
 			</tr>
 
 			<tr>
