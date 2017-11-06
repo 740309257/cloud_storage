@@ -44,6 +44,205 @@
 			<span>上传文件</span>
 		</a>
 	</div>
+
+	<div class="file_nav">
+		<a>最近上传</a>
+		<a>我的收藏</a>
+		<a>垃圾箱</a>
+	</div>
+
+	<div class="search_bar">
+		<form id="search_file" action="search_file" method="post">
+			<select id="searchType" name="searchType">
+				<option value="1">按名称</option>
+				<option value="2">按时间</option>
+				<option value="3">按大小</option>
+			</select>
+			<input id="searchContent" name="searchContent" type="text" placeholder="输入搜索内容">
+			<input id="search_btn" type="button" value="提交">
+		</form>
+	</div>
+
+	<div class="file_list">
+		<table class="file_table">
+
+			<tr>
+				<th class="fname">文件名称</th>
+				<th class="fsize">大小</th>
+				<th class="ftype">类型</th>
+				<th class="fupTime">上传时间</th>
+				<th class="foper">操作</th>
+			</tr>
+
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+			<tr>
+				<td class="fname">文件名称</td>
+				<td class="fsize">大小</td>
+				<td class="ftype">类型</td>
+				<td class="fupTime">上传时间</td>
+				<td class="foper">操作</td>
+			</tr>
+
+		</table>
+
+		<div class="pages">
+			<p>共<span>5</span>页&nbsp;&nbsp;&nbsp;&nbsp;跳至第&nbsp;
+				<input type="text" id="targetPage" name="targetPage"/>
+				&nbsp;页&nbsp;&nbsp;
+				<input id="targetPage_btn" type="button" value="走起"/>
+			</p>
+		</div>
+	</div>
 </div>
+
+
+<%@ include file="footer_new.jsp" %>
 </body>
 </html>
