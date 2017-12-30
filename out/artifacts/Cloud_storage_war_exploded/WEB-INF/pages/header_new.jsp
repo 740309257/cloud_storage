@@ -32,6 +32,7 @@
 			color: #676262;
 			border-radius: 0.2rem;
 			background-color: #E8E7E3;
+			display: none;
 		}
 
 		.header_left {
@@ -108,6 +109,26 @@
 			background-color: #5a5757;
 			color: black;
 		}
+
+		#up_btn{
+			position: absolute;
+			width: 1rem;
+			height: 1rem;
+			right: 0.3rem;
+			top: 4rem;
+			cursor: pointer;
+			display: none;
+		}
+
+		#down_btn{
+			position: absolute;
+			width: 1rem;
+			height: 1rem;
+			right: 0.3rem;
+			top: 0;
+			cursor: pointer;
+			display: none;
+		}
 	</style>
 </head>
 <body>
@@ -130,6 +151,10 @@
 	<div class="header_right">
 		<a class="logout" href="">退出登录</a>
 	</div>
+
+
 </div>
+<img id="down_btn" src="../../images/down.jpg">
+<img id="up_btn"   src="../../images/up.jpg"/>
 </body>
 </html>

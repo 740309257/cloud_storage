@@ -11,7 +11,7 @@
 <html>
 <head>
     <title>Title</title>
-    <script src="<%=request.getContextPath()%>/js/jquery-1.8.2.min.js"></script>
+    <script src="<%=request.getContextPath()%>/js/lib/jquery-1.8.2.min.js"></script>
     <script>
         function isDone(obj,url,id,date) {
             $.ajax({

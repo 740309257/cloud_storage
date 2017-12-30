@@ -8,27 +8,32 @@ html {
     padding: 0;
     text-align: center;
 }
+body{
+    min-height: 100%;
+    width: 100%;
+    position:relative;
+}
 
 a{
     text-decoration: none;
 }
-
+.container{
+    display: none;
+}
 .left_box {
-    height: 100%;
+    min-height: 100%;
     width: 20%;
     float: left;
-    /*border-right: solid 0.1rem black;*/
     background-color: #c7e3f1;
 }
 
 .right_box {
-    /*height: 100%;*/
     width: 80%;
     box-sizing: border-box;
     border-left: 3rem solid white;
     float: left;
     background-color: aliceblue;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 #folder_head {
@@ -36,7 +41,7 @@ a{
     width: 3.6rem;
     height: 14rem;
     top: 20rem;
-    left: 0;
+    left: -3.6rem;
     border: 0.2rem solid #dae0ee;
     border-left: 0.3rem solid #27A9E3;
     box-sizing: border-box;
@@ -52,13 +57,12 @@ a{
 }
 
 #folder_list {
-    /*width: 18rem;*/
     position: relative;
     width: 72%;
     max-width: 21rem;
     top: 8rem;
-    right: 1.6rem;
-    float: right;
+    /*left: 5rem;*/
+    left: -72%;
     list-style-type: none;
     border: 0.2rem solid #27A9E3;
     border-radius: 0.4rem;

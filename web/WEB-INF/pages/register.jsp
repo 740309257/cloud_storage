@@ -8,9 +8,9 @@
 <title>用户注册</title>
 	<link href="<%=request.getContextPath()%>/css/register.css" type="text/css" rel="stylesheet">
 	<script src="<%=request.getContextPath()%>/js/check.js"></script>
-    <script src="<%=request.getContextPath()%>/js/jquery-1.8.2.min.js"></script>
+    <script src="<%=request.getContextPath()%>/js/lib/jquery-1.8.2.min.js"></script>
     <script src="<%=request.getContextPath()%>/js/jquery-ui.min.js.js"></script>
-	<script src="<%=request.getContextPath()%>/js/jquery.md5.js"></script>
+	<script src="<%=request.getContextPath()%>/js/lib/jquery.md5.js"></script>
 	<script>
         function doKeyDown(){
             if(event.keyCode == 13)

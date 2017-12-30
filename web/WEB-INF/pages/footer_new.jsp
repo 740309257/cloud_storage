@@ -11,11 +11,13 @@
 	<title>Title</title>
 	<style>
 		.footer {
-			clear: both;
-			margin-bottom: 0;
-			height: 3rem;
+			display: none;
+			position: absolute;
+			bottom: 0;
+			height: 2rem;
 			width: 100%;
 			background-color: #676262;
+			padding: 0.5rem;
 		}
 	</style>
 </head>
