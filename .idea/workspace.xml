@@ -14,51 +14,7 @@
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/war-exec.manifest" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/war-exec.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/applicationContext.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/dispatcher-servlet.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/lib/spring-web-4.3.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/lib/spring-webmvc-4.3.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/lib/spring-webmvc-portlet-4.3.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/lib/spring-websocket-4.3.4.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/DAO/File_DAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/DAO/Friend_DAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/DAO/Message_DAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/DAO/TPA_DAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/DAO/User_DAO.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/controller/TPA_controller.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/controller/TestController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/controller/file_detail_page.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/controller/homepage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/controller/main_page.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/controller/message_page.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/controller/register.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/controller/upload_page.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/controller/user_page.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/entity/Comment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/entity/File.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/entity/File_share.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/entity/Friend_apply.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/entity/Message.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/entity/Tpa.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/entity/User.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/entity/User_File.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/service/FileService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/service/FriendService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/service/MessageService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/service/TPA_service.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/service/UserService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/service_inter/TPA_service_inter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/service_inter/file_service_inter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/service_inter/friend_service_inter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/service_inter/message_service_inter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/service_inter/user_service_inter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/util/CaptchaUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/util/Properties.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/cloud_storage/util/util.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Cloud_storage_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Cloud_storage_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/5f1c9870-85d7-4e96-9711-c06a61bd4dbe.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/5f1c9870-85d7-4e96-9711-c06a61bd4dbe.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Cloud_storage.iml" afterPath="$PROJECT_DIR$/Cloud_storage.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/file_detail.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/file_detail.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/fileupload.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/fileupload.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/homepage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/homepage.jsp" />
@@ -68,72 +24,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/register.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/register.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/zone.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/zone.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/conf/LoginContext.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/conf/LoginContext.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/conf/LoginInterceptor.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/conf/LoginInterceptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/conf/RegexHashMap.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/conf/RegexHashMap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/conf/UserLoginUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/conf/UserLoginUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/TPA_controller.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/TPA_controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/TestController.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/TestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/file_detail_page.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/file_detail_page.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/homepage.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/homepage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/main_page.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/main_page.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/message_page.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/message_page.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/register.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/register.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/upload_page.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/upload_page.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/user_page.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/controller/user_page.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/dao/FileDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/dao/FileDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/dao/FriendDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/dao/FriendDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/dao/PostDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/dao/PostDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/dao/TPADAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/dao/TPADAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/dao/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/dao/UserDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/dao/UserFileDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/dao/UserFileDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/BaseEntity.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/BaseEntity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/Comment.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/Comment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/File.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/File.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/FileShare.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/FileShare.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/FriendApply.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/FriendApply.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/Post.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/Post.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/Tpa.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/Tpa.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/User.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/UserFile.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/entity/UserFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service/FileService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service/FileService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service/FriendService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service/FriendService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service/MessageService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service/MessageService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service/TPA_service.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service/TPA_service.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service/UserService.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service/UserService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service_inter/TPA_service_inter.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service_inter/TPA_service_inter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service_inter/file_service_inter.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service_inter/file_service_inter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service_inter/friend_service_inter.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service_inter/friend_service_inter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service_inter/message_service_inter.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service_inter/message_service_inter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service_inter/user_service_inter.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/service_inter/user_service_inter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/util/CaptchaUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/util/CaptchaUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/util/CloudContants.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/util/CloudContants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/util/Properties.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/util/Properties.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/cloudstorage/util/util.java" afterPath="$PROJECT_DIR$/src/main/java/com/cloudstorage/util/util.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/db-config.xml" afterPath="$PROJECT_DIR$/src/main/resources/db-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/db.properties" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/dispatcher-servlet.xml" afterPath="$PROJECT_DIR$/src/main/resources/dispatcher-servlet.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/CommentMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/FileMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/FileMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/FileShareMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/FileShareMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/FriendMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/FriendMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/PostMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PostMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/TPAMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TPAMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserFileMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserFileMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mybatis.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/mybatis.cfg.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/fileUpload.jsp" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/fileUpload.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/file_detail.jsp" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/file_detail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/homepage.jsp" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/homepage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/index.jsp" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/my_message.jsp" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/my_message.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/profileUpload.jsp" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/profileUpload.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/register.jsp" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/userpage.jsp" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/userpage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/zone.jsp" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/pages/zone.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/web/WEB-INF/web.xml" />
     </list>
     <ignored path="Cloud_storage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -185,8 +75,8 @@
       <file leaf-file-name="CommentDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudstorage/dao/CommentDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="440">
+              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1267,7 +1157,7 @@
       <workItem from="1514639464638" duration="3432000" />
       <workItem from="1514687414656" duration="8670000" />
       <workItem from="1514699484396" duration="8876000" />
-      <workItem from="1516255356315" duration="95000" />
+      <workItem from="1516255356315" duration="118000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'mavenlization' of github.com:HappyIronman/cloud_storage into mavenlization&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;web/WEB-INF/applicationContext.xml&#10;#&#9;web/WEB-INF/web.xml">
       <created>1516255424733</created>
@@ -1276,11 +1166,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516255424733</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge branch 'mavenlization' of github.com:HappyIronman/cloud_storage into mavenlization&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;web/WEB-INF/applicationContext.xml&#10;#&#9;web/WEB-INF/web.xml">
+      <created>1516255455410</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1516255455410</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="274536000" />
+    <option name="totallyTimeSpent" value="274559000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1885,8 +1782,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/cloudstorage/dao/CommentDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="440">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
