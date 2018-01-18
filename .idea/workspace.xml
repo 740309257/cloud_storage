@@ -6,24 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1827c501-3d09-4c24-a8e6-263c2d80d37b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/Cloud_storage-1.0-SNAPSHOT-war-exec.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/test-spring.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/war-exec.manifest" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/war-exec.properties" />
+    <list default="true" id="1827c501-3d09-4c24-a8e6-263c2d80d37b" name="Default" comment="Merge branch 'mavenlization' of github.com:HappyIronman/cloud_storage into mavenlization&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;web/WEB-INF/applicationContext.xml&#10;#&#9;web/WEB-INF/web.xml">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_0.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/file_detail.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/file_detail.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/fileupload.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/fileupload.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/homepage.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/homepage.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/my_message.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/my_message.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/profileUpload.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/profileUpload.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/register.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/register.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/zone.jsp" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/pages/zone.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/Cloud_storage_war_exploded/WEB-INF/web.xml" />
     </list>
     <ignored path="Cloud_storage.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1157,7 +1143,7 @@
       <workItem from="1514639464638" duration="3432000" />
       <workItem from="1514687414656" duration="8670000" />
       <workItem from="1514699484396" duration="8876000" />
-      <workItem from="1516255356315" duration="118000" />
+      <workItem from="1516255356315" duration="186000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'mavenlization' of github.com:HappyIronman/cloud_storage into mavenlization&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;web/WEB-INF/applicationContext.xml&#10;#&#9;web/WEB-INF/web.xml">
       <created>1516255424733</created>
@@ -1173,11 +1159,18 @@
       <option name="project" value="LOCAL" />
       <updated>1516255455410</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Merge branch 'mavenlization' of github.com:HappyIronman/cloud_storage into mavenlization&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;#&#9;web/WEB-INF/applicationContext.xml&#10;#&#9;web/WEB-INF/web.xml">
+      <created>1516255480302</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1516255480302</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="274559000" />
+    <option name="totallyTimeSpent" value="274627000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
