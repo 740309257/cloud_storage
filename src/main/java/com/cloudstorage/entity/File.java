@@ -1,83 +1,81 @@
-package com.cloud_storage.entity;
+package com.cloudstorage.entity;
 
 /**
  * Created by dell on 1/23/2017.
  */
-public class File {
-    private int file_id;
-    private String filename;
-    private String file_path;
-    private int nums;
-    private String size;
-    private String type;
-    private int provider_id;
+public class File extends BaseEntity {
+	private String uniqueId;
+	private long providerId;
+	private String originName;
+	private String path;
+	private long size;
+	private int type;
 
-    public File(int file_id, String filename, String file_path, int nums, String size, String type, int provider_id) {
-        this.file_id = file_id;
-        this.filename = filename;
-        this.file_path = file_path;
-        this.nums = nums;
-        this.size = size;
-        this.type = type;
-        this.provider_id = provider_id;
-    }
+	public long getProviderId(){
+		return providerId;
+	}
 
-    public File() {
-    }
+	public void setProviderId(long providerId){
+		this.providerId = providerId;
+	}
 
-    public int getFile_id() {
-        return file_id;
-    }
+	public String getOriginName(){
+		return originName;
+	}
 
-    public void setFile_id(int file_id) {
-        this.file_id = file_id;
-    }
+	public void setOriginName(String originName){
+		this.originName = originName;
+	}
 
-    public String getFilename() {
-        return filename;
-    }
+	public String getPath(){
+		return path;
+	}
 
-    public void setFilename(String filename) {
-        this.filename = filename;
-    }
+	public void setPath(String path){
+		this.path = path;
+	}
 
-    public String getFile_path() {
-        return file_path;
-    }
+	public String getUniqueId(){
+		return uniqueId;
+	}
 
-    public void setFile_path(String file_path) {
-        this.file_path = file_path;
-    }
+	public void setUniqueId(String uniqueId){
+		this.uniqueId = uniqueId;
+	}
 
-    public int getNums() {
-        return nums;
-    }
+	public long getSize(){
+		return size;
+	}
 
-    public void setNums(int nums) {
-        this.nums = nums;
-    }
+	public void setSize(long size){
+		this.size = size;
+	}
 
-    public String getSize() {
-        return size;
-    }
+	public int getType(){
+		return type;
+	}
 
-    public void setSize(String size) {
-        this.size = size;
-    }
+	public void setType(int type){
+		this.type = type;
+	}
 
-    public String getType() {
-        return type;
-    }
+	enum Type {
+		AUDIO(1),
+		VIDEO(2),
+		TEXT(3),
+		EXE(4),
+		MIRROR(5),
+		ZIP(6),
+		PDF(7),
+		OTHERS(8);
+		private int id;
 
-    public void setType(String type) {
-        this.type = type;
-    }
+		Type(int id){
+			this.id = id;
+		}
 
-    public int getProvider_id() {
-        return provider_id;
-    }
-
-    public void setProvider_id(int provider_id) {
-        this.provider_id = provider_id;
-    }
+		public int getId(){
+			return id;
+		}
+	}
 }

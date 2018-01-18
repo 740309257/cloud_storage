@@ -7,7 +7,7 @@ import java.util.Date;
  * @Description:
  * @Date: Created in 16:15 2017/12/31 0031
  **/
-public class CloudEntity {
+public class BaseEntity {
 	private long id;
 	private Date create_time;
 

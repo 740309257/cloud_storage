@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
-<mapper namespace="com.cloudstorage.DAO.Friend_DAO">
+<mapper namespace="com.cloudstorage.dao.FriendDAO">
 
     <select id="selectFriendsByUser" parameterType="com.cloudstorage.entity.User" resultType="int">
         (select id1 from friends where id2 = #{id}) UNION  (select id2 from friends where id1 = #{id})

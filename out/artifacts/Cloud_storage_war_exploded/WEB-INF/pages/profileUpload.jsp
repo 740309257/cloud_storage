@@ -11,7 +11,7 @@
     <title>上传头像</title>
 </head>
 <body>
-<form enctype="multipart/form-data" method="post" action="/profileUpload/${user_id}">
+<form enctype="multipart/form-data" method="post" action="/profileUpload/${id}">
     <input type="file" name="profile">
     <input type="submit" value="提交">
 </form>

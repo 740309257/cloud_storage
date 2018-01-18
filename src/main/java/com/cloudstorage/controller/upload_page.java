@@ -1,14 +1,11 @@
-package com.cloud_storage.controller;
+package com.cloudstorage.controller;
 
 
-import com.cloud_storage.entity.File_share;
-import com.cloud_storage.entity.User_File;
-import com.cloud_storage.service_inter.file_service_inter;
-import com.cloud_storage.service_inter.user_service_inter;
-import com.cloud_storage.util.Properties;
-import com.cloud_storage.util.util;
+import com.cloudstorage.entity.UserFile;
+import com.cloudstorage.service_inter.file_service_inter;
+import com.cloudstorage.service_inter.user_service_inter;
+import com.cloudstorage.util.util;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,9 +13,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 import org.springframework.web.multipart.commons.CommonsMultipartFile;
-import sun.swing.SwingUtilities2;
 
-import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
@@ -35,8 +30,8 @@ public class upload_page {
     user_service_inter user_service;
 
 
-    @RequestMapping(value = "/fileUpload/{user_id}")
-    public String section_upload(@PathVariable("user_id") String user_id, MultipartHttpServletRequest request)
+    @RequestMapping(value = "/fileUpload/{id}")
+    public String section_upload(@PathVariable("id") String id, MultipartHttpServletRequest request)
     {
         System.out.println("start processing...");
         List<MultipartFile> up_files = request.getFiles("up_file");
@@ -44,8 +39,8 @@ public class upload_page {
         String filename="";
         String save_path="";
         int file_id;
-        com.cloud_storage.entity.File f=new com.cloud_storage.entity.File();
-        User_File user_file=new User_File();
+        com.cloudstorage.entity.File f=new com.cloudstorage.entity.File();
+        UserFile user_file=new UserFile();
         try {
             for(int i=0;i<up_files.size();i++)
             {
@@ -59,7 +54,7 @@ public class upload_page {
                 f.setFile_path(save_path);
                 f.setFilename(filename);
                 f.setNums(1);
-                f.setProvider_id(Integer.parseInt(user_id));
+                f.setProvider_id(Integer.parseInt(id));
                 f.setFile_id(file_id);
                 f.setSize(util.cal_file_size(up_files.get(i).getSize()));
                 f.setType(util.get_file_type(filename));
@@ -70,7 +65,7 @@ public class upload_page {
                     user_file.setSize(f.getSize());
                     user_file.setDate(new Date().toString());
                     user_file.setAuthority(1);
-                    user_file.setUser_id(Integer.parseInt(user_id));
+                    user_file.setUser_id(Integer.parseInt(id));
                     user_file.setFilename(request.getParameter("filename"+i));
 
                     if(file_service.add_user_file(user_file)){
@@ -82,21 +77,21 @@ public class upload_page {
             e.printStackTrace();
             return "error_page";
         }
-        return "redirect:/homepage/"+user_id;
+        return "redirect:/homepage/"+id;
 
     }
 
-    @RequestMapping("/profileUpload/{user_id}")
-    String profileUpload(@PathVariable("user_id")String user_id,@RequestParam("profile") CommonsMultipartFile profile) throws IOException {
+    @RequestMapping("/profileUpload/{id}")
+    String profileUpload(@PathVariable("id")String id,@RequestParam("profile") CommonsMultipartFile profile) throws IOException {
         Boolean result=false;
         System.out.println("fileName："+profile.getOriginalFilename());
-        String path=util.generate_profile_path(user_id,profile.getOriginalFilename());
+        String path=util.generate_profile_path(id,profile.getOriginalFilename());
         File newFile=new File(path);
         //通过CommonsMultipartFile的方法直接写文件（注意这个时候）
         profile.transferTo(newFile);
-        result=user_service.setPicPath(Integer.parseInt(user_id),path);
+        result=user_service.setPicPath(Integer.parseInt(id),path);
         if(result){
-            return "redirect:/homepage/"+user_id;
+            return "redirect:/homepage/"+id;
         }
         else {
             return "error_page";

@@ -1,4 +1,4 @@
-package com.cloudstorage.DAO;
+package com.cloudstorage.dao;
 
 import com.cloudstorage.entity.File;
 import com.cloudstorage.entity.User;
@@ -11,7 +11,7 @@ import java.util.List;
  * Created by dell on 12/17/2016.
  */
 @Repository
-public interface User_DAO {
+public interface UserDAO {
     public User selectUserByID(int id);
     public List<User> selectUsers(String username);
     public List<File> selectFiles(String filename);

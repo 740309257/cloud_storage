@@ -1,4 +1,4 @@
-package com.cloud_storage.util;
+package com.cloudstorage.util;
 
 import com.sun.image.codec.jpeg.JPEGCodec;
 import com.sun.image.codec.jpeg.JPEGImageEncoder;

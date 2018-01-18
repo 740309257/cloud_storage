@@ -69,10 +69,10 @@ ${user.getUsername()}
             </div>
         </td>
         <td>
-            <input type="button" value="同意" onclick="isDone(this,'/grant_friend','${friend_applier.get("user_id")}','${friend_applier.get("date")}')"/>
-            <input type="button" value="拒绝" onclick="isDone(this,'/deny_friend','${friend_applier.get("user_id")}','${friend_applier.get("date")}')"/>
-            <!--<a href="/grant_friend?applier_id=${friend_applier.get("user_id")}&date=${friend_applier.get("date")}">接受</a>
-            <a href="/deny_friend?applier_id=${friend_applier.get("user_id")}&date=${friend_applier.get("date")}">拒绝</a>-->
+            <input type="button" value="同意" onclick="isDone(this,'/grant_friend','${friend_applier.get("id")}','${friend_applier.get("date")}')"/>
+            <input type="button" value="拒绝" onclick="isDone(this,'/deny_friend','${friend_applier.get("id")}','${friend_applier.get("date")}')"/>
+            <!--<a href="/grant_friend?applier_id=${friend_applier.get("id")}&date=${friend_applier.get("date")}">接受</a>
+            <a href="/deny_friend?applier_id=${friend_applier.get("id")}&date=${friend_applier.get("date")}">拒绝</a>-->
         </td>
 
     </tr>

@@ -1,10 +1,8 @@
-package com.cloud_storage.util;
+package com.cloudstorage.util;
 
-import com.cloud_storage.entity.File;
-import com.cloud_storage.entity.User_File;
+import com.cloudstorage.entity.UserFile;
 import com.google.gson.Gson;
 import com.google.gson.JsonNull;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -43,7 +41,8 @@ public class util {
         else {
             real_path=path;
         }
-        try {
+	    System.out.println(real_path);
+	    try {
             java.io.File pic =new java.io.File(real_path);
             FileInputStream inputStream = new FileInputStream(pic);
             byte[] data = new byte[(int) pic.length()];
@@ -79,7 +78,7 @@ public class util {
                return gson.toJson(src);
             }
 
-            public static String files_to_json(List<User_File> files){
+            public static String files_to_json(List<UserFile> files){
                 List<HashMap> hashMapList=new ArrayList<>();
                 HashMap<String,String> hashMap=new HashMap<>();
                 hashMapList.add(hashMap);
@@ -94,13 +93,13 @@ public class util {
             }
 
 
-            public static Boolean is_login(HttpSession session,int user_id){
+            public static Boolean is_login(HttpSession session,int id){
                 if(session.getAttribute("USERID")==null){
                     return false;
                 }
 
                 int session_id=(int)session.getAttribute("USERID");
-                return session_id==user_id;
+                return session_id==id;
             }
 
 
@@ -116,9 +115,9 @@ public class util {
         return path;
     }
 
-    public static String generate_profile_path(String user_id,String file_name){
+    public static String generate_profile_path(String id,String file_name){
         String base_path=Properties.user_pic_path;
-        String path=base_path+user_id+"_"+file_name;
+        String path=base_path+id+"_"+file_name;
         return path;
     }
 

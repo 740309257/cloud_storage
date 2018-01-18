@@ -59,8 +59,8 @@
                     {alert("注册失败！");}
                     else
                     {
-                        var user_id=data.toString();
-                        window.location.href="http://localhost:8080/homepage/"+user_id;
+                        var id=data.toString();
+                        window.location.href="http://localhost:8080/homepage/"+id;
                     }
                 }
             });
@@ -76,7 +76,7 @@
 </head>
 <body onkeypress="doKeyDown()">
 <div class="register">
-    <div class="message">云存储系统-用户注册</div>
+    <div class="post">云存储系统-用户注册</div>
     <div id="darkbannerwrap"></div>
     
     <form method="post" action="submit" id="register_form">

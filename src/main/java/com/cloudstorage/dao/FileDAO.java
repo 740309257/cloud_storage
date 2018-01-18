@@ -1,4 +1,4 @@
-package com.cloudstorage.DAO;
+package com.cloudstorage.dao;
 
 import com.cloudstorage.entity.File;
 import com.cloudstorage.entity.FileShare;
@@ -14,11 +14,9 @@ import java.util.List;
  * Created by dell on 1/26/2017.
  */
 @Repository
-public interface File_DAO {
-    public HashMap selectFileDetailById(@Param("File_id")int file_id,@Param("User_id")int id);
-    public File selectFileById(int file_id);
-    public UserFile selectUser_FileById(@Param("File_id")int file_id, @Param("User_id")int id);
-    public List<UserFile> selectAllFilesByUser(User u);
+public interface FileDAO {
+    public File selectById(int id);
+    public List<UserFile> selectAllByUserId(User u);
     public List<File> selectPublicFilesByUser(User u);
     public int insert_file_share(FileShare file_share);
     public List<FileShare> select_file_share(int target_id);
@@ -32,5 +30,4 @@ public interface File_DAO {
     public int add_file_nums(int file_id);
     public int minus_file_nums(int file_id);
     public int select_file_nums(int file_id);
-
-    }
+}

@@ -1,62 +1,53 @@
-package com.cloud_storage.entity;
+package com.cloudstorage.entity;
 
 /**
  * Created by dell on 1/23/2017.
  */
-public class Comment {
-    private int comment_id;
-    private int message_id;
-    private int user_id;
-    private String text;
-    private String username;
+public class Comment extends BaseEntity {
 
-    public Comment(int message_id, int user_id, String text,String username) {
-        this.username=username;
-        this.message_id = message_id;
-        this.user_id = user_id;
-        this.text = text;
-    }
+	private long postId;
+	private long userId;
+	private String text;
+	private int likes;
+	private boolean deleted;
 
-    public Comment() {
-    }
+	public long getPostId(){
+		return postId;
+	}
 
-    public int getComment_id() {
-        return comment_id;
-    }
+	public void setPostId(long postId){
+		this.postId = postId;
+	}
 
-    public void setComment_id(int comment_id) {
-        this.comment_id = comment_id;
-    }
+	public long getUserId(){
+		return userId;
+	}
 
-    public int getMessage_id() {
-        return message_id;
-    }
+	public void setUserId(long userId){
+		this.userId = userId;
+	}
 
-    public void setMessage_id(int message_id) {
-        this.message_id = message_id;
-    }
+	public String getText(){
+		return text;
+	}
 
-    public int getUser_id() {
-        return user_id;
-    }
+	public void setText(String text){
+		this.text = text;
+	}
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
-    }
+	public int getLikes(){
+		return likes;
+	}
 
-    public String getText() {
-        return text;
-    }
+	public void setLikes(int likes){
+		this.likes = likes;
+	}
 
-    public void setText(String text) {
-        this.text = text;
-    }
+	public boolean isDeleted(){
+		return deleted;
+	}
 
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
+	public void setDeleted(boolean deleted){
+		this.deleted = deleted;
+	}
 }

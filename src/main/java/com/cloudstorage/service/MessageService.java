@@ -1,10 +1,10 @@
-package com.cloud_storage.service;
+package com.cloudstorage.service;
 
-import com.cloud_storage.DAO.Message_DAO;
-import com.cloud_storage.entity.Comment;
-import com.cloud_storage.entity.Message;
-import com.cloud_storage.entity.User;
-import com.cloud_storage.service_inter.message_service_inter;
+import com.cloudstorage.dao.PostDAO;
+import com.cloudstorage.entity.Comment;
+import com.cloudstorage.entity.Post;
+import com.cloudstorage.entity.User;
+import com.cloudstorage.service_inter.message_service_inter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,16 +16,16 @@ import java.util.List;
 @Service
 public class MessageService implements message_service_inter {
     @Autowired
-    private Message_DAO message_dao;
+    private PostDAO message_dao;
 
-    public List<Message> getMessageByUser(User u){
+    public List<Post> getMessageByUser(User u){
        return message_dao.selectMessageByUser(u);
     }
-    public List<Message> getZoneMessageById(int user_id){
-        return message_dao.selectZoneMessageById(user_id);
+    public List<Post> getZoneMessageById(int id){
+        return message_dao.selectZoneMessageById(id);
     }
-    public Boolean save_message(Message message){
-        int result=message_dao.insert_message(message);
+    public Boolean save_message(Post post){
+        int result=message_dao.insert_message(post);
         if(result==1){
             return true;
         }

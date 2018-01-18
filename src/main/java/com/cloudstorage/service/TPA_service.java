@@ -1,7 +1,7 @@
-package com.cloud_storage.service;
+package com.cloudstorage.service;
 
-import com.cloud_storage.DAO.TPA_DAO;
-import com.cloud_storage.service_inter.TPA_service_inter;
+import com.cloudstorage.dao.TPADAO;
+import com.cloudstorage.service_inter.TPA_service_inter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -11,10 +11,10 @@ import org.springframework.stereotype.Service;
 @Service
 public class TPA_service implements TPA_service_inter {
     @Autowired
-    private TPA_DAO tpa_dao;
+    private TPADAO TPADAO;
 
     @Override
     public Boolean validate_token(String token) {
-        return tpa_dao.selectToken(token)==1;
+        return TPADAO.selectToken(token)==1;
     }
 }

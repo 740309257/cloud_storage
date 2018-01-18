@@ -1,8 +1,8 @@
-package com.cloud_storage.controller;
+package com.cloudstorage.controller;
 
-import com.cloud_storage.entity.User;
-import com.cloud_storage.service_inter.user_service_inter;
-import com.cloud_storage.util.util;
+import com.cloudstorage.entity.User;
+import com.cloudstorage.service_inter.user_service_inter;
+import com.cloudstorage.util.util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,12 +35,12 @@ public class register {
         save_result=user_service.save_user(u);
 
         if(save_result){
-            int user_id = user_service.get_user_id_by_name(u.getUsername());
-            System.out.println(user_id + "\n" + u.getUsername());
+            int id = user_service.get_id_by_name(u.getUsername());
+            System.out.println(id + "\n" + u.getUsername());
 
-            session.setAttribute("USERID", user_id);
+            session.setAttribute("USERID", id);
             session.setAttribute("USERNAME", u.getUsername());
-            out.println(user_id);
+            out.println(id);
             out.flush();
         }
         else {

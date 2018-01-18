@@ -3,8 +3,9 @@
 		"http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
-	<!--
-		该文件已不需要
-		所有映射配置均在 spring-base.xml 的 bean 节点 id 为 sqlSessionFactctory 中配置完成
-	 -->
+	<!--mybatis配置文件-->
+	<settings>
+		<!--开启驼峰命名-->
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+	</settings>
 </configuration>

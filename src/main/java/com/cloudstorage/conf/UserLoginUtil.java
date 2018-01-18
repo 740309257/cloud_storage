@@ -1,9 +1,20 @@
 package com.cloudstorage.conf;
 
+import com.cloudstorage.entity.User;
+
 /**
  * @Author: Ironman
  * @Description:
  * @Date: Created in 12:16 2017/12/31 0031
  **/
-public class UserLoginContext {
+public class UserLoginUtil {
+	public static User getLoginUserInfo(){
+		Object user = LoginContext.getLoginInfo();
+		return (User) user;
+	}
+
+	public static Long getLoginUserId(){
+		return getLoginUserInfo().getId();
+	}
+
 }

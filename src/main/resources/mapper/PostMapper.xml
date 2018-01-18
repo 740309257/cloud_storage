@@ -3,7 +3,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 
-<mapper namespace="com.cloudstorage.dao.MessageDAO">
+<mapper namespace="com.cloudstorage.dao.PostDAO">
 
 
     <!-- 为了返回list 类型而定义的returnMap -->

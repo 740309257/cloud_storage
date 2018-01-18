@@ -59,8 +59,8 @@
                     {alert("注册失败！");}
                     else
                     {
-                        var user_id=data.toString();
-                        window.location.href="http://localhost:8080/homepage/"+user_id;
+                        var id=data.toString();
+                        window.location.href="http://localhost:8080/homepage/"+id;
                     }
                 }
             });

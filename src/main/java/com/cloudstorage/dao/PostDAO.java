@@ -11,7 +11,7 @@ import java.util.List;
  * Created by dell on 1/24/2017.
  */
 @Repository
-public interface MessageDAO {
+public interface PostDAO {
     public List<Post> selectMessageByUser(User u);
     public List<Post> selectZoneMessageById(int id);
     public int insert_message(Post post);

@@ -1,6 +1,7 @@
-package com.cloud_storage.controller;
+package com.cloudstorage.controller;
 
-import com.cloud_storage.service_inter.file_service_inter;
+import com.cloudstorage.entity.FileShare;
+import com.cloudstorage.service_inter.file_service_inter;
 import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -28,7 +29,7 @@ public class file_detail_page {
 
     @RequestMapping("/download_file/{file_id}")
     public ResponseEntity<byte[]> download(@PathVariable("file_id")String file_id) throws IOException {
-        com.cloud_storage.entity.File f=file_service.getFileById(Integer.parseInt(file_id));
+        com.cloudstorage.entity.File f=file_service.getFileById(Integer.parseInt(file_id));
         String path=f.getFile_path();
         File file=new File(path);
         HttpHeaders headers = new HttpHeaders();
@@ -41,10 +42,10 @@ public class file_detail_page {
 
     @RequestMapping(value = "/file_rename/{file_id}",method = RequestMethod.POST)
     public String rename(@PathVariable("file_id")String file_id,String new_name,HttpSession session){
-        int user_id;
+        int id;
         if(session.getAttribute("USERID")!=null){
-            user_id=(int)session.getAttribute("USERID");
-            if(file_service.rename_file(Integer.parseInt(file_id),user_id,new_name)){
+            id=(int)session.getAttribute("USERID");
+            if(file_service.rename_file(Integer.parseInt(file_id),id,new_name)){
                 return "redirect:/file_detail/"+file_id;
             }
         }
@@ -53,10 +54,10 @@ public class file_detail_page {
     }
     @RequestMapping(value = "/delete_file/{file_id}")
     public String delete(@PathVariable("file_id")String file_id, HttpSession session){
-        int user_id;
+        int id;
         if(session.getAttribute("USERID")!=null){
-            user_id=(int)session.getAttribute("USERID");
-            if(file_service.delete_entry(Integer.parseInt(file_id),user_id)){
+            id=(int)session.getAttribute("USERID");
+            if(file_service.delete_entry(Integer.parseInt(file_id),id)){
                 return "redirect:/homepage/"+session.getAttribute("USERID");
             }
         }
@@ -64,7 +65,7 @@ public class file_detail_page {
         return "error_page";
     }
     @RequestMapping(value = "/share_file",method = RequestMethod.GET)
-    public String share(com.cloud_storage.entity.File_share file_share){
+    public String share(FileShare file_share){
         file_share.setIs_valid(1);
         file_share.setDate(new Date().toString());
         if(file_service.share_file(file_share)){
@@ -75,10 +76,10 @@ public class file_detail_page {
 
     @RequestMapping(value = "/set_file_auth",method = RequestMethod.GET)
     public String set_auth(String file_id,String auth,HttpSession session){
-        int user_id;
+        int id;
         if(session.getAttribute("USERID")!=null){
-            user_id=(int)session.getAttribute("USERID");
-            if(file_service.change_file_auth(Integer.parseInt(file_id),user_id,Integer.parseInt(auth))){
+            id=(int)session.getAttribute("USERID");
+            if(file_service.change_file_auth(Integer.parseInt(file_id),id,Integer.parseInt(auth))){
                 return "redirect:/file_detail/"+file_id;
             }
         }

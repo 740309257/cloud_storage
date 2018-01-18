@@ -1,64 +1,83 @@
-package com.cloud_storage.entity;
-
-import java.util.ArrayList;
+package com.cloudstorage.entity;
 
 /**
  * Created by dell on 1/23/2017.
  */
-public class User {
-    private int user_id;
-    private String username;
-    private String password;
-    private String introduction;
-    private String pic_path;
+public class User extends BaseEntity{
+	private String uniqueId;
+	private String username;
+	private String password;
+	private String introduction;
+	private String picPath;
+	private String mobile;
+	private String email;
 
-    public User(String username, String password, String introduction, String pic_path) {
-        this.username = username;
-        this.password = password;
-        this.introduction = introduction;
-        this.pic_path = pic_path;
-    }
+	public String getUniqueId(){
+		return uniqueId;
+	}
 
-    public User() {
-    }
+	public void setUniqueId(String uniqueId){
+		this.uniqueId = uniqueId;
+	}
 
-    public int getUser_id() {
-        return user_id;
-    }
+	public String getUsername(){
+		return username;
+	}
 
-    public void setUser_id(int user_id) {
-        this.user_id = user_id;
-    }
+	public void setUsername(String username){
+		this.username = username;
+	}
 
-    public String getUsername() {
-        return username;
-    }
+	public String getPassword(){
+		return password;
+	}
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+	public void setPassword(String password){
+		this.password = password;
+	}
 
-    public String getPassword() {
-        return password;
-    }
+	public String getIntroduction(){
+		return introduction;
+	}
 
-    public void setPassword(String password) {
-        this.password = password;
-    }
+	public void setIntroduction(String introduction){
+		this.introduction = introduction;
+	}
 
-    public String getIntroduction() {
-        return introduction;
-    }
+	public String getPicPath(){
+		return picPath;
+	}
 
-    public void setIntroduction(String introduction) {
-        this.introduction = introduction;
-    }
+	public void setPicPath(String picPath){
+		this.picPath = picPath;
+	}
 
-    public String getPic_path() {
-        return pic_path;
-    }
+	public String getMobile(){
+		return mobile;
+	}
 
-    public void setPic_path(String pic_path) {
-        this.pic_path = pic_path;
-    }
+	public void setMobile(String mobile){
+		this.mobile = mobile;
+	}
+
+	public String getEmail(){
+		return email;
+	}
+
+	public void setEmail(String email){
+		this.email = email;
+	}
+
+	@Override
+	public String toString(){
+		return "User{" +
+				"uniqueId='" + uniqueId + '\'' +
+				", username='" + username + '\'' +
+				", password='" + password + '\'' +
+				", introduction='" + introduction + '\'' +
+				", picPath='" + picPath + '\'' +
+				", mobile='" + mobile + '\'' +
+				", email='" + email + '\'' +
+				'}';
+	}
 }

@@ -44,7 +44,7 @@ SHARE WITH:
     <tr>
 
         <td>
-            <a href="/share_file?user_id=${user_id}&target_id=${friend.getUser_id()}&file_id=${m_file.get("file_id")}">${friend.getUsername()}</a>
+            <a href="/share_file?id=${id}&target_id=${friend.getUser_id()}&file_id=${m_file.get("file_id")}">${friend.getUsername()}</a>
         </td>
 
     </tr>

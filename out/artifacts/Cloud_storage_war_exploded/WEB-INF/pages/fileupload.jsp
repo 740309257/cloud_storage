@@ -108,7 +108,7 @@
     </head>
 <body>
 
-<form id="fileinfo" name="fileinfo" enctype="multipart/form-data" method="post" action="/fileUpload/${user_id}">
+<form id="fileinfo" name="fileinfo" enctype="multipart/form-data" method="post" action="/fileUpload/${id}">
 
 <a href="#" id="AddMoreFileBox" class="btn btn-info">添加文件</a></span></p>
 <div id="InputsWrapper">

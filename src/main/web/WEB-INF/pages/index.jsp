@@ -47,8 +47,8 @@
 					{alert("登录失败！");}
 					else
 					{
-						var user_id=data.toString();
-						window.location.href="http://localhost:8080/homepage/"+user_id;
+						var id=data.toString();
+						window.location.href="http://localhost:8080/homepage/"+id;
 					}
 				}
 			});
@@ -75,7 +75,7 @@
 </form>
 
 <div class="login">
-    <div class="message">云存储系统-用户登录</div>
+    <div class="post">云存储系统-用户登录</div>
     <div id="darkbannerwrap"></div>
     
     <form method="post" action="/verify" id="login_form">

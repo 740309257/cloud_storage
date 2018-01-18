@@ -3,10 +3,11 @@ package com.cloudstorage.entity;
 /**
  * Created by dell on 1/23/2017.
  */
-public class Message extends BaseEntity{
+public class Post extends BaseEntity{
 	private long userId;
 	private String text;
 	private int likes;
+	private boolean deleted;
 
 	public long getUserId(){
 		return userId;
@@ -30,5 +31,13 @@ public class Message extends BaseEntity{
 
 	public void setLikes(int likes){
 		this.likes = likes;
+	}
+
+	public boolean isDeleted(){
+		return deleted;
+	}
+
+	public void setDeleted(boolean deleted){
+		this.deleted = deleted;
 	}
 }

@@ -1,4 +1,4 @@
-package com.cloudstorage.DAO;
+package com.cloudstorage.dao;
 
 import com.cloudstorage.entity.FriendApply;
 import com.cloudstorage.entity.User;
@@ -11,7 +11,7 @@ import java.util.List;
  * Created by dell on 1/24/2017.
  */
 @Repository
-public interface Friend_DAO {
+public interface FriendDAO {
     public List<Integer> selectFriendsByUser(User u);
     public int insert_Friend_apply(FriendApply friend_apply);
     public List<FriendApply> select_Friend_apply(int target_id);

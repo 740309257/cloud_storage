@@ -1,67 +1,43 @@
 package com.cloudstorage.entity;
 
-import java.util.Date;
-
 /**
  * Created by dell on 1/23/2017.
  */
-public class File_share {
-    private int id;
-    private int target_id;
-    private int file_id;
-    private int is_valid;//0:not valid;1:valid
-    private String date;
+public class FileShare extends BaseEntity{
+	private long userId;
+	private long targetId;
+	private long fileId;
+	private int isValid;
 
-    public File_share(int id, int target_id, int file_id, int is_valid,String date) {
-        this.id = id;
-        this.target_id = target_id;
-        this.file_id = file_id;
-        this.is_valid = is_valid;
-        this.date=date;
-    }
+	public long getUserId(){
+		return userId;
+	}
 
-    public File_share() {
-        is_valid=1;
-        date=new Date().toString();
-    }
+	public void setUserId(long userId){
+		this.userId = userId;
+	}
 
-    public int getUser_id() {
-        return id;
-    }
+	public long getTargetId(){
+		return targetId;
+	}
 
-    public void setUser_id(int id) {
-        this.id = id;
-    }
+	public void setTargetId(long targetId){
+		this.targetId = targetId;
+	}
 
-    public int getTarget_id() {
-        return target_id;
-    }
+	public long getFileId(){
+		return fileId;
+	}
 
-    public void setTarget_id(int target_id) {
-        this.target_id = target_id;
-    }
+	public void setFileId(long fileId){
+		this.fileId = fileId;
+	}
 
-    public int getFile_id() {
-        return file_id;
-    }
+	public int getIsValid(){
+		return isValid;
+	}
 
-    public void setFile_id(int file_id) {
-        this.file_id = file_id;
-    }
-
-    public int getIs_valid() {
-        return is_valid;
-    }
-
-    public void setIs_valid(int is_valid) {
-        this.is_valid = is_valid;
-    }
-
-    public String getDate() {
-        return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
-    }
+	public void setIsValid(int isValid){
+		this.isValid = isValid;
+	}
 }

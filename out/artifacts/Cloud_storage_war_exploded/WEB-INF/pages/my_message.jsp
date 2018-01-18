@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<form action="/publish_message/${user_id}" method="post">
+<form action="/publish_message/${id}" method="post">
     <input name="text" id="text" type="text">
     <input type="submit" value="PUBLISH">
 </form>

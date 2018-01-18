@@ -1,7 +1,7 @@
-package com.cloud_storage.service_inter;
+package com.cloudstorage.service_inter;
 
-import com.cloud_storage.entity.File;
-import com.cloud_storage.entity.User;
+import com.cloudstorage.entity.File;
+import com.cloudstorage.entity.User;
 
 import java.util.List;
 
@@ -12,9 +12,9 @@ public interface user_service_inter {
     public Boolean username_exist(String username);
     public Boolean save_user(User u);
     public Boolean verify_password(String username,String password);
-    public int get_user_id_by_name(String username);
+    public int get_id_by_name(String username);
     public List<User> search_users(String username);
     public List<File> search_files(String filename);
     public User getUserByID(int id);
-    public Boolean setPicPath(int user_id,String path);
+    public Boolean setPicPath(int id,String path);
 }

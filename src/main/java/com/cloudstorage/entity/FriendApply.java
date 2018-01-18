@@ -3,7 +3,7 @@ package com.cloudstorage.entity;
 /**
  * Created by dell on 1/23/2017.
  */
-public class Friend_apply {
+public class FriendApply extends BaseEntity{
 	private long applierId;
 	private long targetId;
 	private int isValid;

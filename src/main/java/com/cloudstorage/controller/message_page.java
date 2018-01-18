@@ -1,10 +1,10 @@
-package com.cloud_storage.controller;
+package com.cloudstorage.controller;
 
-import com.cloud_storage.entity.Comment;
-import com.cloud_storage.entity.Message;
-import com.cloud_storage.service_inter.message_service_inter;
-import com.cloud_storage.service_inter.user_service_inter;
-import com.cloud_storage.util.util;
+import com.cloudstorage.entity.Comment;
+import com.cloudstorage.entity.Post;
+import com.cloudstorage.service_inter.message_service_inter;
+import com.cloudstorage.service_inter.user_service_inter;
+import com.cloudstorage.util.util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -29,17 +29,14 @@ public class message_page {
     @Autowired
     private user_service_inter user_service;
 
-    @RequestMapping(value = "/publish_message/{user_id}",method = RequestMethod.POST)
-    public String publish_message(@PathVariable("user_id")String publisher_id, String text, HttpSession session){
-        if(!util.is_login(session,Integer.parseInt(publisher_id))){
-            return "redirect:/main_page";
-        }
-        Message message=new Message();
-        message.setPublisher_id(Integer.parseInt(publisher_id));
-        message.setText(text);
-        message.setTime(new Date());
-        message.setPublisher_name(user_service.getUserByID(Integer.parseInt(publisher_id)).getUsername());
-        if(message_service.save_message(message)){
+    @RequestMapping(value = "/publish_message/{id}",method = RequestMethod.POST)
+    public String publish_message(@PathVariable("id")String publisher_id, String text, HttpSession session){
+        Post post =new Post();
+        post.setPublisher_id(Integer.parseInt(publisher_id));
+        post.setText(text);
+        post.setTime(new Date());
+        post.setPublisher_name(user_service.getUserByID(Integer.parseInt(publisher_id)).getUsername());
+        if(message_service.save_message(post)){
             return "";
         }
         else {
@@ -55,18 +52,18 @@ public class message_page {
         return "comment";
     }
 
-    @RequestMapping(value = "/publish_comment/{user_id}",method = RequestMethod.POST)
-    public void publish_comment(@PathVariable("user_id")String user_id, String message_id, String text,HttpSession session, HttpServletResponse response) throws IOException {
+    @RequestMapping(value = "/publish_comment/{id}",method = RequestMethod.POST)
+    public void publish_comment(@PathVariable("id")String id, String message_id, String text,HttpSession session, HttpServletResponse response) throws IOException {
         PrintWriter writer=response.getWriter();
-        if(!util.is_login(session,Integer.parseInt(user_id))){
+        if(!util.is_login(session,Integer.parseInt(id))){
             writer.print("error");
         }
         else {
             Comment comment = new Comment();
             comment.setText(text);
             comment.setMessage_id(Integer.parseInt(message_id));
-            comment.setUser_id(Integer.parseInt(user_id));
-            comment.setUsername(user_service.getUserByID(Integer.parseInt(user_id)).getUsername());
+            comment.setUserId(Integer.parseInt(id));
+            comment.setUsername(user_service.getUserByID(Integer.parseInt(id)).getUsername());
             if (message_service.save_comment(comment)) {
                 if (message_service.Comment_num_plus(Integer.parseInt(message_id))) {
                     writer.print("true");

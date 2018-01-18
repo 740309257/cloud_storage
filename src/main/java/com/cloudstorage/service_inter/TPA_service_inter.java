@@ -1,4 +1,4 @@
-package com.cloud_storage.service_inter;
+package com.cloudstorage.service_inter;
 
 /**
  * Created by dell on 3/9/2017.

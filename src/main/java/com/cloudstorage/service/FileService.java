@@ -1,13 +1,12 @@
-package com.cloud_storage.service;
+package com.cloudstorage.service;
 
-import com.cloud_storage.DAO.File_DAO;
-import com.cloud_storage.DAO.User_DAO;
-import com.cloud_storage.entity.File;
-import com.cloud_storage.entity.File_share;
-import com.cloud_storage.entity.User;
-import com.cloud_storage.entity.User_File;
-import com.cloud_storage.service_inter.file_service_inter;
-import com.cloud_storage.util.Properties;
+import com.cloudstorage.dao.FileDAO;
+import com.cloudstorage.dao.UserDAO;
+import com.cloudstorage.entity.File;
+import com.cloudstorage.entity.FileShare;
+import com.cloudstorage.entity.User;
+import com.cloudstorage.entity.UserFile;
+import com.cloudstorage.service_inter.file_service_inter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -22,36 +21,36 @@ import java.util.List;
 @Service
 public class FileService implements file_service_inter {
     @Autowired
-    File_DAO file_dao;
+    FileDAO file_dao;
     @Autowired
-    User_DAO user_dao;
+    UserDAO user_dao;
 
-    public List<User_File> getAllFilesByUser(User u){
-        List<User_File> files=file_dao.selectAllFilesByUser(u);
+    public List<UserFile> getAllFilesByUser(User u){
+        List<UserFile> files=file_dao.selectAllFilesByUser(u);
         return files;
     }
     public List<File> getPublicFilesByUser(User u){
         List<File> files=file_dao.selectPublicFilesByUser(u);
         return files;
     }
-    public Boolean share_file(File_share file_share){
+    public Boolean share_file(FileShare file_share){
         int result=file_dao.insert_file_share(file_share);
         return result==1;
     }
 
-    public List<File_share> get_share(int target_id){
+    public List<FileShare> get_share(int target_id){
         return file_dao.select_file_share(target_id);
     }
 
-    public HashMap getFileDetailById(int file_id,int user_id){
-        return file_dao.selectFileDetailById(file_id,user_id);
+    public HashMap getFileDetailById(int file_id,int id){
+        return file_dao.selectFileDetailById(file_id,id);
     }
     public File getFileById(int file_id){return file_dao.selectFileById(file_id);}
-    public User_File getUser_FileById(int file_id,int user_id){return file_dao.selectUser_FileById(file_id,user_id);}
+    public UserFile getUser_FileById(int file_id, int id){return file_dao.selectUser_FileById(file_id,id);}
 
 
     public List<HashMap> get_share_info(int target_id){
-        List<File_share> file_shares=get_share(target_id);
+        List<FileShare> file_shares=get_share(target_id);
         List<HashMap> share_info=new ArrayList<>();
         User u;
         File f;
@@ -59,7 +58,7 @@ public class FileService implements file_service_inter {
             u=user_dao.selectUserByID(file_shares.get(i).getUser_id());
             f=file_dao.selectFileById(file_shares.get(i).getFile_id());
             HashMap<String,Object> hashMap=new HashMap();
-            hashMap.put("user_id",u.getUser_id());
+            hashMap.put("id",u.getId());
             hashMap.put("username",u.getUsername());
             hashMap.put("file_id",f.getFile_id());
             hashMap.put("filename",f.getFilename());
@@ -69,28 +68,28 @@ public class FileService implements file_service_inter {
         return share_info;
     }
 
-    public Boolean change_share_states_0(File_share file_share){
+    public Boolean change_share_states_0(FileShare file_share){
         return file_dao.update_share_states_to_0(file_share)==1;
     }
     public Boolean add_file(File file){
         return file_dao.insert_file(file)==1;
     }
-    public Boolean add_user_file(User_File user_file){return file_dao.insert_user_file(user_file)==1;}
+    public Boolean add_user_file(UserFile user_file){return file_dao.insert_user_file(user_file)==1;}
     public Boolean add_file_nums(int file_id){return file_dao.add_file_nums(file_id)==1;}
-    public Boolean change_file_auth(int file_id,int user_id,int auth){
-        return file_dao.update_file_auth(file_id,user_id,auth)==1;
+    public Boolean change_file_auth(int file_id,int id,int auth){
+        return file_dao.update_file_auth(file_id,id,auth)==1;
     }
-    public Boolean rename_file(int file_id,int user_id,String new_name){
-        return file_dao.update_file_name(file_id,user_id,new_name)==1;
+    public Boolean rename_file(int file_id,int id,String new_name){
+        return file_dao.update_file_name(file_id,id,new_name)==1;
     }
-    public Boolean delete_user_file(int file_id,int user_id){
-        return file_dao.delete_user_file(file_id,user_id)==1;
+    public Boolean delete_user_file(int file_id,int id){
+        return file_dao.delete_user_file(file_id,id)==1;
     }
-    public Boolean save_file(int file_id,int user_id){
+    public Boolean save_file(int file_id,int id){
 
-        User_File user_file=file_dao.selectUser_FileById(file_id,user_id);
+        UserFile user_file=file_dao.selectUser_FileById(file_id,id);
         if(user_file!=null) {
-            user_file.setUser_id(user_id);
+            user_file.setUser_id(id);
             user_file.setAuthority(1);
             user_file.setDate(new Date().toString());
 
@@ -103,8 +102,8 @@ public class FileService implements file_service_inter {
         }
         return false;
     }
-    public Boolean delete_entry(int file_id,int user_id){
-        if(delete_user_file(file_id,user_id)){
+    public Boolean delete_entry(int file_id,int id){
+        if(delete_user_file(file_id,id)){
             int file_nums=file_dao.select_file_nums(file_id);
             if(file_nums==1){
                 String path="";

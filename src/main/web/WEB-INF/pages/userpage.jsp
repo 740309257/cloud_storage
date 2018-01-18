@@ -33,16 +33,16 @@
 <body>
 ${user.getUsername()}
 <p>他的动态</p>
-<c:forEach items="${l_message}" var="message" varStatus="s" begin="0" end="${l_message.size()}">
+<c:forEach items="${l_message}" var="post" varStatus="s" begin="0" end="${l_message.size()}">
     <tr>
         <td>
             <div class="tt">
-                <p>${message.getText()}</p>
+                <p>${post.getText()}</p>
             </div>
         </td>
         <td>
-            <a href="/comment/${message.getMessage_id()}">评论${message.getComment_num()}</a>
-            <p>${message.getTime()}</p>
+            <a href="/comment/${post.getMessage_id()}">评论${post.getComment_num()}</a>
+            <p>${post.getTime()}</p>
         </td>
 
     </tr>
