@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.cloudstorage.dao.FriendDAO">
+
+    <select id="selectFriendsByUser" parameterType="com.cloudstorage.entity.User" resultType="int">
+        (select id1 from friends where id2 = #{id}) UNION  (select id2 from friends where id1 = #{id})
+    </select>
+
+    <insert id="insert_Friend_apply"
+            useGeneratedKeys="true" keyProperty="id" >
+        insert into friend_apply(applier_id,target_id,is_valid,date)
+        values(#{applier_id},#{target_id},#{is_valid},#{date})
+    </insert>
+
+
+    <update id="update_friend_apply_to_0" >
+        update friend_apply set is_valid= 0 where applier_id=#{applier_id} and target_id=#{target_id} and is_valid=#{is_valid} and date=#{date}
+    </update>
+
+
+
+
+    <!-- 为了返回list 类型而定义的returnMap -->
+    <resultMap type="com.cloudstorage.entity.FriendApply" id="resultListApply">
+        <id column="applier_id" property="applier_id" />
+        <id column="date" property="date" />
+    </resultMap>
+    <!-- 返回list 的select 语句，注意 resultMap 的值是指向前面定义好的 -->
+    <select id="select_Friend_apply" parameterType="int" resultMap="resultListApply">
+        select * from friend_apply where target_id = #{target_id} and is_valid = 1
+    </select>
+
+    <select id="select_same_apply" parameterType="com.cloudstorage.entity.FriendApply" resultType="int">
+        select count(*) from friend_apply where applier_id=#{applier_id} and target_id=#{target_id} and is_valid=#{is_valid}
+    </select>
+    <select id="select_friend"  resultType="int">
+        select count(*) from friends where (id1 = #{User_id1} and id2 = #{User_id2}) or (id1 = #{User_id2} and id2 = #{User_id1})
+    </select>
+
+    <insert id="insert_Friends" useGeneratedKeys="true" keyProperty="id" >
+        insert into friends(id1,id2)
+        values(#{User_id1},#{User_id2})
+    </insert>
+
+
+</mapper>

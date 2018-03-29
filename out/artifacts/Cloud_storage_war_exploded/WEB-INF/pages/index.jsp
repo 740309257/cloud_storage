@@ -7,10 +7,10 @@
 <meta http-equiv="Expires" content="0"> 
 <title>云存储系统</title>
 <link href="<%=request.getContextPath()%>/css/login.css" type="text/css" rel="stylesheet">
-	<script src="<%=request.getContextPath()%>/js/jquery-1.8.2.min.js"></script>
+	<script src="<%=request.getContextPath()%>/js/lib/jquery-1.8.2.min.js"></script>
 	<script src="<%=request.getContextPath()%>/js/jquery-ui.min.js.js"></script>
 
-	<script src="<%=request.getContextPath()%>/js/jquery.md5.js"></script>
+	<script src="<%=request.getContextPath()%>/js/lib/jquery.md5.js"></script>
 	<script>
         function md5Encryption(obj){
             var login_pwd=document.getElementById("login_password").value;
@@ -47,8 +47,8 @@
 					{alert("登录失败！");}
 					else
 					{
-						var user_id=data.toString();
-						window.location.href="http://localhost:8080/homepage/"+user_id;
+						var id=data.toString();
+						window.location.href="http://localhost:8080/homepage/"+id;
 					}
 				}
 			});

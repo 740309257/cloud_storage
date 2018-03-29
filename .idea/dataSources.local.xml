@@ -9,7 +9,9 @@
       <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper" />
       <secret-storage>master_key</secret-storage>
       <user-name>root</user-name>
+      <introspection-schemas>*:cloud_storage</introspection-schemas>
       <resolve-scope>cloud_storage:</resolve-scope>
+      <unqualified-resolve-schemas>cloud_storage:</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>

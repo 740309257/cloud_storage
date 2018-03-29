@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.cloudstorage.dao.PostDAO">
+
+
+    <!-- 为了返回list 类型而定义的returnMap -->
+    <resultMap type="com.cloudstorage.entity.Post" id="resultListMessage">
+        <id column="message_id" property="message_id" />
+        <result column="text" property="text" />
+        <result column="publisher_name" property="publisher_name" />
+        <result column="time" property="time" />
+        <result column="comment_num" property="comment_num" />
+    </resultMap>
+    <!-- 返回list 的select 语句，注意 resultMap 的值是指向前面定义好的 -->
+    <select id="selectMessageByUser" parameterType="com.cloudstorage.entity.User" resultMap="resultListMessage">
+        select * from post where publisher_id = #{id} order by message_id desc
+    </select>
+
+
+    <select id="selectZoneMessageById" parameterType="int" resultMap="resultListMessage">
+        select * from post where publisher_id in
+        (select id1 from friends where id2 = #{id} UNION select id2 from friends where id1 = #{id})
+        order by message_id desc
+    </select>
+
+    <insert id="insert_message" parameterType="com.cloudstorage.entity.Post"
+            useGeneratedKeys="true" keyProperty="id" >
+        insert into post(publisher_id,publisher_name,text,time,comment_num)
+        values(#{publisher_id},#{publisher_name},#{text},#{time},#{comment_num})
+    </insert>
+
+    <insert id="insert_comment" parameterType="com.cloudstorage.entity.Comment"
+            useGeneratedKeys="true" keyProperty="id" >
+        insert into comment(message_id,id,text,username)
+        values(#{message_id},#{id},#{text},#{username})
+    </insert>
+
+
+    <resultMap type="com.cloudstorage.entity.Comment" id="resultListComment">
+        <id column="comment_id" property="comment_id" />
+        <result column="text" property="text" />
+        <result column="id" property="id" />
+        <result column="username" property="username" />
+    </resultMap>
+    <select id="selectComment" parameterType="int" resultMap="resultListComment">
+        select * from comment where message_id = #{message_id} order by comment_id desc
+    </select>
+
+
+    <update id="update_comment_num" parameterType="int">
+        update post set comment_num=comment_num+1 where message_id=#{message_id}
+    </update>
+</mapper>

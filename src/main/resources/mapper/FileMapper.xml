@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.cloudstorage.dao.FileDAO">
+
+	<sql id="columns">
+        id, unique_id, provider_id, origin_name, path, size, type, create_time
+    </sql>
+
+	<sql id="baseSelect">
+		select
+		<include refid="columns"/>
+		from file
+	</sql>
+
+	<select id="selectById" parameterType="java.lang.Long" resultType="com.cloudstorage.entity.File">
+		<include refid="baseSelect"/>
+		where id = #{id}
+	</select>
+
+
+	<select id="selectAllByUserId" parameterType="com.cloudstorage.entity.User"
+	        resultType="com.cloudstorage.entity.UserFile">
+        select * from user_file where id = #{id}
+    </select>
+
+	<select id="selectPublicFilesByUser" parameterType="com.cloudstorage.entity.User"
+	        resultType="com.cloudstorage.entity.UserFile">
+        select * from user_file where id = #{id} and authority = 1
+    </select>
+
+
+	<insert id="insert_file_share"
+	        useGeneratedKeys="true" keyProperty="id">
+        insert into file_share(id,target_id,file_id,is_valid,date)
+        values(#{id},#{target_id},#{file_id},#{is_valid},#{date})
+    </insert>
+
+
+	<resultMap type="com.cloudstorage.entity.FileShare" id="resultListFileShare">
+		<id column="id" property="id"/>
+		<result column="file_id" property="file_id"/>
+		<result column="date" property="date"/>
+	</resultMap>
+	<select id="select_file_share" parameterType="int" resultMap="resultListFileShare">
+        select * from file_share where target_id = #{target_id} and is_valid = 1
+    </select>
+
+	<select id="select_file_nums" parameterType="int" resultType="int">
+        select nums from file where file_id = #{file_id}
+    </select>
+
+
+	<update id="add_file_nums" parameterType="int">
+        update file set nums = nums + 1 where file_id=#{file_id}
+    </update>
+
+	<update id="minus_file_nums" parameterType="int">
+        update file set nums = nums - 1 where file_id=#{file_id}
+    </update>
+
+	<update id="update_share_states_to_0">
+        update file_share set is_valid= 0 where target_id=#{target_id} and file_id=#{file_id} and is_valid=#{is_valid} and date=#{date}
+    </update>
+
+	<insert id="insert_file" parameterType="com.cloudstorage.entity.File"
+	        useGeneratedKeys="true" keyProperty="id">
+        insert into file(file_id,filename,file_path,nums,size,type,provider_id)
+        values(#{file_id},#{filename},#{file_path},#{nums},#{size},#{type},#{provider_id})
+    </insert>
+
+	<insert id="insert_user_file" parameterType="com.cloudstorage.entity.UserFile"
+	        useGeneratedKeys="true" keyProperty="id">
+        insert into user_file(id,file_id,filename,authority,date,size)
+        values(#{id},#{file_id},#{filename},#{authority},#{date},#{size})
+    </insert>
+
+	<update id="update_file_auth">
+        update user_file set authority= #{Auth} where file_id=#{File_id} and id = #{User_id}
+    </update>
+
+	<update id="update_file_name">
+        update user_file set filename= #{New_name} where file_id = #{File_id} and id = #{User_id}
+    </update>
+
+
+	<delete id="delete_user_file">
+        delete from user_file where file_id=#{File_id} and id = #{User_id}
+    </delete>
+
+	<delete id="delete_file" parameterType="int">
+        delete from file where file_id=#{file_id}
+    </delete>
+
+
+</mapper>
